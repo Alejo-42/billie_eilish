@@ -1,0 +1,67 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url(/assets/img//hit\ me\ hard\ and\ soft\ PC\ wallpaper\ \(billie\ eilish\).jpeg);
+}
+header{
+    background-color: white;
+    padding: 10px;
+    h1{
+        color: blue;
+        text-shadow: 7px 7px 15px black;
+        -webkit-text-stroke: 3px black;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100px;
+    }    
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    transition: all 0.5s;
+    padding: 10px;
+}
+a:hover{
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+section{
+    display: flex;
+    ul{
+        list-style-type: none;
+        color: white;
+        font-weight: bolder;
+        section{
+            padding: 15px;
+            margin: 10px;
+            li{
+                font-size: 30px;
+                article{
+                    background-color: blue;
+                    opacity: 0.8;
+                    padding: 15px;
+                    margin: 10px;    
+                    border-radius: 20px;                
+                }
+            }
+        }
+    }
+}
+.derechos{
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;  
+    font-size: small;  
+}
