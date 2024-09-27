@@ -1,6 +1,39 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
 body{
-    background-color: rgb(150, 236, 128);
+    background-image: url(/assets/img/Billie\ Eilish\ Wallpaper\ Desktop\ 🖤.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.albumes{
+    article{
+        display: flex;
+        a{
+            color: black;
+            text-decoration: none;
+            transition: all 0.5s;
+            padding: 10px;
+            margin: 2px;
+        }
+        .hmhas:hover{
+            color: blue;
+        }
+        a:hover{
+            color: black;
+        }
+    }
+}
+main{
+    background-color: white;
+    opacity: 70%;
 }
 nav{
     background-color: blue;
@@ -27,10 +60,47 @@ nav{
         }
     }
 }
-.derechos{
-    margin: 0;
-    text-align: center;
+footer{
     background-color: black;
     color: white;
     padding: 10px;
+    article{
+        display: flex;
+        a{
+            text-decoration: none;
+            transition: all 0.8s;
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+            font-weight: bolder;
+        }
+        .face:hover{
+            color: blue;
+            background-color: white;
+            font-weight: bolder;
+        }
+        .ig:hover{
+            color: rgb(255, 57, 156);
+            background-color: white;
+            font-weight: bolder;
+        }
+        .tt:hover   {
+            color: black;
+            background-color: white;
+            font-weight: bolder;
+        }
+    }
+    .derechos{
+        margin: 0;
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;  
+        font-size: small;  
+    }    
 }
