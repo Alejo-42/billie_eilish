@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(150, 236, 128);
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background-color: blue;
+    text-align: right;
+    padding: 20px;
+    ul{
+        display: inline-flex;
+        list-style-type: none;
+        margin: 0;
+        li{
+            padding: 20px;
+            color: white;
+            a{
+                text-decoration: none;
+                color: white;
+                transition: all 0.5s;
+            }
+            a:hover{
+                color: black;
+                background-color: white;
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.derechos{
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
