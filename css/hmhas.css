@@ -31,21 +31,22 @@ a:hover{
     padding: 10px;
 }
 section{
-    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
     ul{
         list-style-type: none;
         color: white;
         font-weight: bolder;
         section{
-            padding: 15px;
-            margin: 10px;
+            margin: 10px 20px 10px 20px;
             li{
                 font-size: 30px;
                 article{
                     background-color: blue;
                     opacity: 0.8;
                     padding: 15px;
-                    margin: 10px;    
+                    margin: 10px 30px 10px 30px;    
                     border-radius: 20px;                
                 }
             }
