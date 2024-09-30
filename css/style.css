@@ -27,6 +27,9 @@ body{
         .hmhas:hover{
             color: blue;
         }
+        .hte:hover{
+            color: gold;
+        }
         a:hover{
             color: black;
         }
