@@ -44,6 +44,28 @@ body{
 main{
     background-color: white;
     flex-grow: 1;
+    .album{
+        background-color: white;
+        border-radius: 50px;
+        h5{
+            padding: 10px;
+            color: black;
+        }
+        p{
+            padding: 10px;
+            a{
+             text-decoration: none;
+             color: black;
+             transition: all 0.8s;
+            }
+            a:hover{
+                padding: 10px;
+                background-color: black;
+                border-radius: 50px;
+                color: white;
+            }
+        }
+    }
 }
 nav{
     background-color: chocolate ;
