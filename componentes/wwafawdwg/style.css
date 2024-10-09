@@ -1,31 +1,13 @@
-*,
-*::after,
-*::before{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 body{
-    background-image: url(/assets/hmhas\ fondo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-header{
-    background-color: white;
-    padding: 10px;
-    h1{
-        color: blue;
-        text-shadow: 7px 7px 15px black;
-        -webkit-text-stroke: 3px black;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 100px;
-    }    
+    margin: 0;  
+    background-image: url(/assets/wwafawdwg\ fondo.jpeg);
 }
 main{
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     section{
@@ -55,7 +37,7 @@ section{
                 article{
                     display: flex;
                     flex-direction: column;
-                    background-color: blue;
+                    background-color: black;
                     opacity: 0.8;
                     padding: 10px;
                     margin: 10px;    
@@ -65,32 +47,56 @@ section{
                         margin: 5px;
                         padding: 5px;
                         text-align: center;
-                    } 
-                    a{
-                        font-size: 50px;
-                        color: black;
-                        transition: all 0.8s;
-                        padding: 5px;
-                        text-align: center;
-                    } 
-                    a:hover{
                         color: white;
-                    }           
+                    } 
+                    audio{
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        a{
+                            font-size: 50px;
+                            color: white;
+                            transition: all 0.8s;
+                            padding: 5px;
+                            margin: 0;
+                            text-align: center;
+                        } 
+                        a:hover{
+                            color: black;
+                            background-color: white;
+                        }   
+                    }
                 }
             }
         }
     }
+}
+header{
+    background-color: white;
+    padding: 10px;
+    h1{
+        color: black;
+        text-shadow: 7px 7px 15px black;
+        -webkit-text-stroke: 3px black;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100px;
+    }    
 }
 .derechos{
     margin: 0;
     text-align: center;
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 11px;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 10;  
     font-size: small;  
-}
+}    
