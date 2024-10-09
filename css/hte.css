@@ -5,8 +5,79 @@
     margin: 0;
     padding: 0;
 }
+header{
+    background-color: white;
+    padding: 10px;
+    h1{
+        color: gold;
+        text-shadow: 7px 7px 15px black;
+        -webkit-text-stroke: 3px black;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100px;
+    }    
+}
 main{
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    section{
+        display: flex;
+        justify-content: space-evenly;
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            section{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    ul{
+        list-style-type: none;
+        color: white;
+        font-weight: bolder;
+        section{
+            margin: 10px 20px 10px 20px;
+            li{
+                article{
+                    display: flex;
+                    flex-direction: column;
+                    background-color: gold;
+                    opacity: 0.8;
+                    padding: 10px;
+                    margin: 10px;    
+                    border-radius: 20px; 
+                    h3{
+                        font-size: 35px;
+                        margin: 5px;
+                        padding: 5px;
+                        text-align: center;
+                    } 
+                    audio{
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    a{
+                        font-size: 50px;
+                        color: black;
+                        transition: all 0.8s;
+                        padding: 5px;
+                        text-align: center;
+                    } 
+                    a:hover{
+                        color: white;
+                    }           
+                }
+            }
+        }
+    }
 }
 body{
     background-repeat: no-repeat;
