@@ -6,6 +6,7 @@
     padding: 0;
 }
 body{
+    background-image: url(/assets/hmhas\ fondo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -24,10 +25,26 @@ header{
         font-size: 100px;
     }    
 }
+main{
+    display: flex;
+    justify-content: center;
+    section{
+        display: flex;
+        justify-content: space-evenly;
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            section{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
 section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     ul{
         list-style-type: none;
         color: white;
