@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.derechos{
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 11px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;  
+    font-size: small;  
+}    
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url(/assets/FONDOS/dsat\ fondo.jpeg);
+}
+header{
+    background-color: white;
+    padding: 10px;
+    h1{
+        color: orangered;
+        text-shadow: 7px 7px 15px black;
+        -webkit-text-stroke: 3px black;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100px;
+    }    
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    section{
+        display: flex;
+        justify-content: space-evenly;
+        ul{
+            display: flex;
+            flex-direction: column;
+            section{
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+    }
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    ul{
+        list-style-type: none;
+        color: white;
+        font-weight: bolder;
+        section{
+            margin: 10px 20px 10px 20px;
+            li{
+                article{
+                    display: flex;
+                    flex-direction: column;
+                    background-color: orangered;
+                    opacity: 0.8;
+                    padding: 10px;
+                    margin: 10px;    
+                    border-radius: 20px; 
+                    h3{
+                        font-size: 35px;
+                        margin: 5px;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        a{
+                            font-size: 50px;
+                            color: black;
+                            transition: all 0.8s;
+                            padding: 5px;
+                            margin: 0;
+                            text-align: center;
+                        } 
+                        a:hover{
+                            color: white;
+                        }
+                    }           
+                }
+            }
+        }
+    }
+}
