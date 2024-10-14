@@ -25,6 +25,9 @@ body{
         text-align: center;
         font-size: 5rem;
     }
+    #carouselExampleCaptions{
+        margin: 0 25vh 5vh 25vh;
+    }
 }
 main{
     display: flex;
@@ -32,24 +35,14 @@ main{
     background-color: white;
     flex-grow: 1;
     .album{
-        background-color: white;
-        border-radius: 50px;
         h5{
-            padding: 10px;
-            color: black;
-        }
-        p{
-            padding: 10px;
+            padding: 5vh;
             a{
-             text-decoration: none;
-             color: black;
-             transition: all 0.8s;
-            }
-            a:hover{
-                padding: 10px;
-                background-color: black;
-                border-radius: 50px;
-                color: white;
+                padding: 5vh;
+                -webkit-text-stroke: 1px white;
+                color: black;
+                text-decoration: none;
+                font-size: 4rem;
             }
         }
     }
@@ -75,6 +68,7 @@ nav{
                 background-color: white;
                 padding: 10px;
                 font-weight: bold;
+                border-radius: 5px;
             }
         }
     }
