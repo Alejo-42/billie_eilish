@@ -65,7 +65,7 @@ main{
                     a{
                         font-size: 50px;
                         color: black;
-                        transition: all 0.8s;
+                        transition: all 0.5s;
                         padding: 5px;
                         margin: 0;
                         text-align: center;

@@ -14,75 +14,6 @@ body{
     margin: 0;  
     background-image: url(/assets/FONDOS/wwafawdwg\ fondo.jpeg);
 }
-main{
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    section{
-        display: flex;
-        justify-content: space-evenly;
-        ul{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            section{
-                display: flex;
-                justify-content: space-around;
-            }
-        }
-    }
-}
-section{
-    display: flex;
-    flex-wrap: wrap;
-    ul{
-        list-style-type: none;
-        color: white;
-        font-weight: bolder;
-        section{
-            margin: 10px 20px 10px 20px;
-            li{
-                article{
-                    display: flex;
-                    flex-direction: column;
-                    background-color: black;
-                    opacity: 0.8;
-                    padding: 10px;
-                    margin: 10px;    
-                    border-radius: 20px; 
-                    h3{
-                        font-size: 35px;
-                        margin: 5px;
-                        padding: 5px;
-                        text-align: center;
-                        color: white;
-                    } 
-                    audio{
-                        display: flex;
-                        text-align: center;
-                        justify-content: center;
-                    }
-                    div{
-                        display: flex;
-                        justify-content: center;
-                        a{
-                            font-size: 50px;
-                            color: white;
-                            transition: all 0.8s;
-                            padding: 5px;
-                            margin: 0;
-                            text-align: center;
-                        } 
-                        a:hover{
-                            color: black;
-                            background-color: white;
-                        }   
-                    }
-                }
-            }
-        }
-    }
-}
 header{
     background-color: white;
     padding: 10px;
@@ -94,6 +25,69 @@ header{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 100px;
     }    
+}
+main{
+    ul{
+        display: flex;
+        flex-direction: column;
+        section{
+            display: flex;
+            justify-content: space-around;
+            li{
+                display: flex;
+                flex-direction: column;
+                background-color: black;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 20px;
+                section{
+                    padding: 10px;
+                    div{
+                        img{
+                            width: 100px;
+                            height: 100px;
+                            margin: 10px;
+                            padding: 10px;
+                        }
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        h3{
+                            color: white;
+                            -webkit-text-stroke: 1px black;
+                            font-size: 30px;
+                            margin: 5px;
+                            padding: 5px;
+                            text-align: center;
+                        }
+                        p{
+                            color: white;
+                            margin: 5px;
+                            padding: 5px;
+                            text-align: center;
+                        }
+                    }
+                }
+                div{
+                    display: flex;
+                    justify-content: center;
+                    a{
+                        color: white;
+                        font-size: 50px;
+                        transition: all 0.5s;
+                        padding: 5px;
+                        margin: 0;
+                        text-align: center;
+                    } 
+                    a:hover{
+                        -webkit-text-stroke: 1px white;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
 }
 .derechos{
     margin: 0;
