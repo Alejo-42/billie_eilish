@@ -18,313 +18,94 @@ header{
     }    
 }
 main{
-    display: flex;
-    justify-content: center;
-    section{
-        display: flex;
-        justify-content: space-evenly;
-        ul{
-            display: flex;
-            flex-direction: column;
-            section{
-                display: flex;
-                justify-content: space-evenly;
-            }
-        }
-    }
-}
-section{
-    display: flex;
-    flex-wrap: wrap;
     ul{
-        list-style-type: none;
-        color: white;
-        font-weight: bolder;
+        display: flex;
+        flex-direction: column;
         section{
-            margin: 10px 20px 10px 20px;
+            display: flex;
+            justify-content: space-around;
             li{
-                .wwimf{
-                    display: flex;
-                    flex-direction: column;
-                    background-color: greenyellow;
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 20px;
+                section{
                     padding: 10px;
-                    margin: 10px;    
-                    border-radius: 20px; 
                     div{
                         img{
-                        width: 100px;
-                        height: 100px;
+                            width: 100px;
+                            height: 100px;
+                            margin: 10px;
+                            padding: 10px;
                         }
-                    }
-                    h3{
-                        font-size: 35px;
-                        margin: 5px;
-                        padding: 20px;
-                        text-align: center;
                     }
                     div{
                         display: flex;
-                        justify-content: center;
-                        a{
-                            font-size: 50px;
-                            color: black;
-                            transition: all 0.8s;
-                            padding: 5px;
-                            margin: 0;
-                            text-align: center;
-                        } 
-                        a:hover{
+                        flex-direction: column;
+                        h3{
                             color: white;
+                            -webkit-text-stroke: 1px black;
+                            font-size: 30px;
+                            margin: 5px;
+                            padding: 5px;
+                            text-align: center;
                         }
-                    }           
+                        p{
+                            margin: 5px;
+                            padding: 5px;
+                            text-align: center;
+                        }
+                    }
                 }
-                .everything{
+                div{
                     display: flex;
-                    flex-direction: column;
-                    background-color: rosybrown;
-                    padding: 10px;
-                    margin: 10px;    
-                    border-radius: 20px; 
-                    div{
-                        img{
-                        width: 100px;
-                        height: 100px;
-                        }
-                    }
-                    h3{
-                        font-size: 35px;
-                        margin: 5px;
-                        padding: 20px;
+                    justify-content: center;
+                    a{
+                        font-size: 50px;
+                        color: black;
+                        transition: all 0.8s;
+                        padding: 5px;
+                        margin: 0;
                         text-align: center;
+                    } 
+                    a:hover{
+                        color: white;
                     }
-                    div{
-                        display: flex;
-                        justify-content: center;
-                        a{
-                            font-size: 50px;
-                            color: black;
-                            transition: all 0.8s;
-                            padding: 5px;
-                            margin: 0;
-                            text-align: center;
-                        } 
-                        a:hover{
-                            color: white;
-                        }
-                    }           
-                }
-                .the-30{
-                    display: flex;
-                    flex-direction: column;
-                    background-color: rosybrown;
-                    padding: 10px;
-                    margin: 10px;    
-                    border-radius: 20px; 
-                    div{
-                        img{
-                        width: 100px;
-                        height: 100px;
-                        }
-                    }
-                    h3{
-                        font-size: 35px;
-                        margin: 5px;
-                        padding: 20px;
-                        text-align: center;
-                    }
-                    div{
-                        display: flex;
-                        justify-content: center;
-                        a{
-                            font-size: 50px;
-                            color: black;
-                            transition: all 0.8s;
-                            padding: 5px;
-                            margin: 0;
-                            text-align: center;
-                        } 
-                        a:hover{
-                            color: white;
-                        }
-                    }           
-                }
-                .TV{
-                    display: flex;
-                    flex-direction: column;
-                    background-color: rosybrown;
-                    padding: 10px;
-                    margin: 10px;    
-                    border-radius: 20px; 
-                    div{
-                        img{
-                        width: 100px;
-                        height: 100px;
-                        }
-                    }
-                    h3{
-                        font-size: 35px;
-                        margin: 5px;
-                        padding: 20px;
-                        text-align: center;
-                    }
-                    div{
-                        display: flex;
-                        justify-content: center;
-                        a{
-                            font-size: 50px;
-                            color: black;
-                            transition: all 0.8s;
-                            padding: 5px;
-                            margin: 0;
-                            text-align: center;
-                        } 
-                        a:hover{
-                            color: white;
-                        }
-                    }           
-                }
-                .nttd{
-                    display: flex;
-                    flex-direction: column;
-                    background-color: gray;
-                    padding: 10px;
-                    margin: 10px;    
-                    border-radius: 20px; 
-                    div{
-                        img{
-                        width: 100px;
-                        height: 100px;
-                        }
-                    }
-                    h3{
-                        font-size: 35px;
-                        margin: 5px;
-                        padding: 20px;
-                        text-align: center;
-                    }
-                    div{
-                        display: flex;
-                        justify-content: center;
-                        a{
-                            font-size: 50px;
-                            color: black;
-                            transition: all 0.8s;
-                            padding: 5px;
-                            margin: 0;
-                            text-align: center;
-                        } 
-                        a:hover{
-                            color: white;
-                        }
-                    }           
-                }
-                .bored{
-                    display: flex;
-                    flex-direction: column;
-                    background-color:darkcyan;
-                    padding: 10px;
-                    margin: 10px;    
-                    border-radius: 20px; 
-                    div{
-                        img{
-                        width: 100px;
-                        height: 100px;
-                        }
-                    }
-                    h3{
-                        font-size: 35px;
-                        margin: 5px;
-                        padding: 20px;
-                        text-align: center;
-                    }
-                    div{
-                        display: flex;
-                        justify-content: center;
-                        a{
-                            font-size: 50px;
-                            color: black;
-                            transition: all 0.8s;
-                            padding: 5px;
-                            margin: 0;
-                            text-align: center;
-                        } 
-                        a:hover{
-                            color: white;
-                        }
-                    }           
-                }
-                .coap{
-                    display: flex;
-                    flex-direction: column;
-                    background-color:purple;
-                    padding: 10px;
-                    margin: 10px;    
-                    border-radius: 20px; 
-                    div{
-                        img{
-                        width: 100px;
-                        height: 100px;
-                        }
-                    }
-                    h3{
-                        font-size: 35px;
-                        margin: 5px;
-                        padding: 20px;
-                        text-align: center;
-                    }
-                    div{
-                        display: flex;
-                        justify-content: center;
-                        a{
-                            font-size: 50px;
-                            color: black;
-                            transition: all 0.8s;
-                            padding: 5px;
-                            margin: 0;
-                            text-align: center;
-                        } 
-                        a:hover{
-                            color: white;
-                        }
-                    }           
-                }
-                .guess{
-                    display: flex;
-                    flex-direction: column;
-                    background-color:darkslategray;
-                    padding: 10px;
-                    margin: 10px;    
-                    border-radius: 20px; 
-                    div{
-                        img{
-                        width: 100px;
-                        height: 100px;
-                        }
-                    }
-                    h3{
-                        font-size: 35px;
-                        margin: 5px;
-                        padding: 20px;
-                        text-align: center;
-                    }
-                    div{
-                        display: flex;
-                        justify-content: center;
-                        a{
-                            font-size: 50px;
-                            color: black;
-                            transition: all 0.8s;
-                            padding: 5px;
-                            margin: 0;
-                            text-align: center;
-                        } 
-                        a:hover{
-                            color: white;
-                        }
-                    }           
-                }
+                }           
             }
-        }
+            .wwimf{
+                background-color: rgb(150, 218, 25);
+            }
+            .nttd{
+                background-color: gray;
+            }
+            .bored{
+                background-color: rgb(226, 230, 173);
+            }
+            .TV, .the30{
+                background-color:pink;
+            }
+            .eiw{
+                background-color:darksalmon;
+            }
+            .guess{
+                background-color:dimgray;
+            }
+            .lovely{
+                background-color: wheat;
+            }
+            .lvao{
+                background-color:rgb(54, 47, 79);
+            }
+            .coap{
+                background-color: rgb(64, 5, 131);
+            }
+            .hotline{
+                background-color: chocolate;
+            }
+        }    
     }
 }
 body{
@@ -335,7 +116,6 @@ body{
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
-    margin: 0;
 }
 .derechos{
     margin: 0;
