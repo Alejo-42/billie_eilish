@@ -14,6 +14,7 @@ header{
 }
 body{
     min-height: 100vh;
+    background-image: url(/assets/FONDOS/fondo\ general.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -22,18 +23,20 @@ body{
     margin: 0;
 }
 .albumes{
-    h2{
-        text-align: center;
-        font-size: 5rem;
-    }
-    #carouselExampleCaptions{
+        h2{
+            background-color: white;
+            opacity: 0.8;
+            padding: 10px;
+            text-align: center;
+            font-size: 5rem;
+        }
+    .carrusel{
         margin: 0 25vh 5vh 25vh;
     }
 }
 main{
     display: flex;
     flex-direction: column;
-    background-color: white;
     flex-grow: 1;
     .album{
         h5{
@@ -75,6 +78,8 @@ nav{
     }
 }
 .inicio{
+    background-color: white;
+    opacity: 0.8;
     padding: 10px;
     h1{
         text-align: center;

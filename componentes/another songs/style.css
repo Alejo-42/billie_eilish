@@ -105,12 +105,15 @@ main{
             .hotline{
                 background-color: chocolate;
             }
+            .bbh{
+                background-color:crimson;
+            }
         }    
     }
 }
 body{
     min-height: 100vh;
-    background-image: url(/assets/FONDOS/another\ songs\ album.jpeg);
+    background-image: url(/assets/FONDOS/another\ songs\ fondo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
