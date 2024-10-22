@@ -26,27 +26,26 @@ body{
         h2{
             background-color: white;
             opacity: 0.8;
-            padding: 10px;
+            padding: 1rem;
             text-align: center;
             font-size: 5rem;
         }
     .carrusel{
-        margin: 0 25vh 5vh 25vh;
+        margin: 5vh 25vh 5vh 25vh;
     }
 }
 main{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     .album{
         h5{
-            padding: 5vh;
+            padding: 3%;
+            margin: 0;
             a{
-                padding: 5vh;
                 -webkit-text-stroke: 1px white;
                 color: black;
                 text-decoration: none;
-                font-size: 4rem;
+                font-size: 2rem;
             }
         }
     }
@@ -54,13 +53,13 @@ main{
 nav{
     background-color: chocolate ;
     text-align: right;
-    padding: 20px;
+    padding: 2%;
     ul{
         display: inline-flex;
         list-style-type: none;
         margin: 0;
         li{
-            padding: 20px;
+            padding: 5vh;
             color: white;
             a{
                 text-decoration: none;
@@ -70,9 +69,9 @@ nav{
             a:hover{
                 color: black;
                 background-color: white;
-                padding: 10px;
+                padding: 2vh;
                 font-weight: bold;
-                border-radius: 5px;
+                border-radius: 1rem;
             }
         }
     }
@@ -80,54 +79,68 @@ nav{
 .inicio{
     background-color: white;
     opacity: 0.8;
-    padding: 10px;
+    padding: 2%;
     h1{
         text-align: center;
-        font-size: 5rem;
+        font-size: 6rem;
     }
 }
 footer{
     background-color: black;
     color: white;
-    padding: 10px;
-    margin-bottom: -10px;
-    article{
-        display: flex;
-        a{
-            text-decoration: none;
-            transition: all 0.8s;
-            padding: 10px;
-            color: white;
-            border-radius: 10px;
-            font-weight: bolder;
-        }
-        .face:hover{
-            color: blue;
-            background-color: white;
-            font-weight: bolder;
-        }
-        .ig:hover{
-            color: rgb(255, 57, 156);
-            background-color: white;
-            font-weight: bolder;
-        }
-        .tt:hover   {
-            color: black;
-            background-color: white;
-            font-weight: bolder;
-        }
+    padding: 5%;
+    margin: 0;
+    h3{
+        font-size: 2rem;
+        padding: 2%;
+        margin: 0;
     }
+    section{
+        display: flex;
+        padding: 1%;
+        margin: 1%;
+        article{
+            display: flex;
+            padding: 1%;
+            margin: 1%;
+            a{
+                display: flex;
+                margin: 1%;
+                text-decoration: none;
+                transition: all 0.8s;
+                padding: 1%;
+                color: white;
+                border-radius: 10px;
+                font-weight: bolder;
+            }
+            .face:hover{
+                    color: blue;
+                    background-color: white;
+                    font-weight: bolder;
+                }
+            .ig:hover{
+                color: rgb(255, 57, 156);
+                background-color: white;
+                font-weight: bolder;
+            }
+            .tt:hover{
+                color: black;
+                background-color: white;
+                font-weight: bolder;
+                }
+            }
+        }
     .derechos{
         margin: 0;
         text-align: center;
         background-color: black;
         color: white;
-        padding: 11px;
+        padding: 1%;
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
-        z-index: 10;  
+        z-index: 1;  
         font-size: small;  
     }    
 }
