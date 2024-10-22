@@ -24,6 +24,7 @@ body{
 }
 .albumes{
         h2{
+            flex-wrap: wrap;
             background-color: white;
             opacity: 0.8;
             padding: 1rem;
@@ -31,7 +32,7 @@ body{
             font-size: 5rem;
         }
     .carrusel{
-        margin: 5vh 25vh 5vh 25vh;
+        margin: 5vh;
     }
 }
 main{
@@ -88,7 +89,7 @@ nav{
 footer{
     background-color: black;
     color: white;
-    padding: 5%;
+    padding: 3%;
     margin: 0;
     h3{
         font-size: 2rem;
@@ -97,21 +98,27 @@ footer{
     }
     section{
         display: flex;
-        padding: 1%;
-        margin: 1%;
+        padding: 0;
+        margin: 0;
         article{
             display: flex;
-            padding: 1%;
-            margin: 1%;
+            padding: 1vh;
+            margin: 1vh;
+            width: 20vh;
             a{
+                justify-content: center;
+                width: 100%;
                 display: flex;
-                margin: 1%;
+                margin: 5%;
+                padding: 5%;
                 text-decoration: none;
                 transition: all 0.8s;
-                padding: 1%;
                 color: white;
                 border-radius: 10px;
                 font-weight: bolder;
+                i{
+                    padding: 4%;
+                }
             }
             .face:hover{
                     color: blue;
@@ -143,4 +150,7 @@ footer{
         z-index: 1;  
         font-size: small;  
     }    
+}
+@media (max-width:800px){
+
 }
