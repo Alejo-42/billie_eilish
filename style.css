@@ -6,11 +6,15 @@
     padding: 0;
 }
 header{
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
+    position: sticky;
+    top: 0;
     z-index: 1;
+    display: flex;
+    padding: 2%;
+    justify-content: end;
+    background-color: chocolate ;
+    border-bottom: solid 1px black;
 }
 body{
     min-height: 100vh;
@@ -23,44 +27,43 @@ body{
     margin: 0;
 }
 .albumes{
+    .carrusel{
+        .album{
+            margin: 5vh;
+            h5{
+                padding: 4vh;
+                margin: 0;
+                a{
+                    -webkit-text-stroke: 1px violet;
+                    color: black;
+                    text-decoration: none;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
         h2{
             flex-wrap: wrap;
             background-color: white;
-            opacity: 0.8;
             padding: 1rem;
             text-align: center;
             font-size: 5rem;
         }
-    .carrusel{
-        margin: 5vh;
-    }
 }
 main{
     display: flex;
     flex-direction: column;
-    .album{
-        h5{
-            padding: 3%;
-            margin: 0;
-            a{
-                -webkit-text-stroke: 1px white;
-                color: black;
-                text-decoration: none;
-                font-size: 2rem;
-            }
-        }
-    }
 }
 nav{
-    background-color: chocolate ;
-    text-align: right;
-    padding: 2%;
+    padding: 0;
+    margin: 0;
     ul{
-        display: inline-flex;
-        list-style-type: none;
+        display: flex;
+        padding: 0;
         margin: 0;
         li{
-            padding: 5vh;
+            list-style-type: none;
+            padding: 10px;
             color: white;
             a{
                 text-decoration: none;
@@ -70,27 +73,30 @@ nav{
             a:hover{
                 color: black;
                 background-color: white;
-                padding: 2vh;
+                padding: 1vh;
                 font-weight: bold;
-                border-radius: 1rem;
+                border-radius: 10px;
             }
         }
     }
 }
 .inicio{
     background-color: white;
-    opacity: 0.8;
     padding: 2%;
     h1{
         text-align: center;
         font-size: 6rem;
     }
+    p{
+        flex-wrap: wrap;
+    }
 }
 footer{
     background-color: black;
     color: white;
-    padding: 3%;
+    padding: 1%;
     margin: 0;
+    padding-bottom: 0;
     h3{
         font-size: 2rem;
         padding: 2%;
@@ -98,59 +104,154 @@ footer{
     }
     section{
         display: flex;
-        padding: 0;
-        margin: 0;
-        article{
+        justify-content: space-between;
+            .rs{
             display: flex;
-            padding: 1vh;
-            margin: 1vh;
-            width: 20vh;
-            a{
-                justify-content: center;
-                width: 100%;
+            padding: 0;
+            margin: 0;
+            article{
                 display: flex;
-                margin: 5%;
-                padding: 5%;
-                text-decoration: none;
-                transition: all 0.8s;
-                color: white;
-                border-radius: 10px;
-                font-weight: bolder;
-                i{
-                    padding: 4%;
-                }
-            }
-            .face:hover{
-                    color: blue;
-                    background-color: white;
+                padding: 1vh;
+                margin: 1vh;
+                width: 20vh;
+                a{
+                    justify-content: center;
+                    width: 100%;
+                    display: flex;
+                    margin: 5%;
+                    padding: 5%;
+                    text-decoration: none;
+                    transition: all 0.8s;
+                    color: white;
+                    border-radius: 10px;
                     font-weight: bolder;
+                    i{
+                        padding: 4%;
+                    }
                 }
-            .ig:hover{
-                color: rgb(255, 57, 156);
-                background-color: white;
-                font-weight: bolder;
+                .face:hover{
+                    color: blue;
+                        background-color: white;
+                        font-weight: bolder;
+                    }
+                    .ig:hover{
+                        color: rgb(255, 57, 156);
+                        background-color: white;
+                        font-weight: bolder;
+                    }
+                    .tt:hover{
+                        color: black;
+                        background-color: white;
+                        font-weight: bolder;
+                    }
+                }
             }
-            .tt:hover{
-                color: black;
-                background-color: white;
-                font-weight: bolder;
-                }
+        .btmd{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+                button{
+                    border: solid 1px white;
+                    padding: 1%;
+                    height: 5vh;
+                    width: 25vh;
+                    background-color: black;
+                    color: white;
+                    transition: all 0.5s;
+                    }
+                    button:hover{
+                        background-color: white;
+                        color: black;
+                        border: solid 2px black;
+                    }
             }
         }
-    .derechos{
+        .derechos{
         margin: 0;
         text-align: center;
         background-color: black;
         color: white;
         padding: 1%;
-        position: fixed;
-        bottom: 0;
-        left: 0;
         width: 100%;
-        z-index: 1;  
-        font-size: small;  
+        font-size: small; 
+        position:sticky;
+        z-index: 1;
     }    
 }
 @media (max-width:800px){
-
+    header{
+        position: relative;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        nav{
+            ul{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }
+    }
+    .albumes{
+        .carrusel{
+            .album{
+                h5{
+                    a{
+                        color: wheat;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        h2{
+            font-size: 3rem;
+        }
+    }
+    footer{
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .rs{
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                article{
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width:450px) {
+    .inicio{
+        h1{
+            font-size:4rem;
+        }
+    }
+}
+.modoOscuro{
+    color: white;
+    header{
+            background-color: dimgray;
+        }
+    .albumes{
+        h2{
+            background-color: gray;
+        }
+    }
+    .inicio{
+        background-color: gray;
+    }
+    .albumes{
+        .album{
+            h5{
+                font-size: 2rem;
+            }
+        }
+    }
 }
