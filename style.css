@@ -14,9 +14,9 @@ header{
     padding: 2%;
     justify-content: end;
     background-color: chocolate ;
-    border-bottom: solid 1px black;
 }
 body{
+    flex: 1;
     min-height: 100vh;
     background-image: url(/assets/FONDOS/fondo\ general.jpeg);
     background-repeat: no-repeat;
@@ -176,6 +176,9 @@ footer{
                 }
             }
         .btmd{
+            position: fixed;
+            bottom: 5vh;
+            right: 2vw;
             display: flex;
             justify-content:center;
             align-items: center;
@@ -200,7 +203,7 @@ footer{
         text-align: center;
         background-color: black;
         color: white;
-        padding: 1%;
+        padding: 0.1%;
         width: 100%;
         font-size: small; 
         position:sticky;

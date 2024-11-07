@@ -7,6 +7,7 @@
 }
 body{
     min-height: 100vh;
+    flex: 1;
     background-image: url(/assets/FONDOS/hmhas\ fondo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,14 +16,14 @@ body{
 }
 header{
     background-color: white;
-    padding: 10px;
+    padding: 5vh;
     h1{
         color: blue;
         text-shadow: 7px 7px 15px black;
         -webkit-text-stroke: 3px black;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 100px;
+        font-size: 10vw;
     }    
 }
 main{
@@ -33,49 +34,58 @@ main{
             display: flex;
             justify-content: space-around;
             li{
+                width: 30%;
                 display: flex;
                 flex-direction: column;
                 background-color: blue;
-                padding: 10px;
-                margin: 10px;
+                padding: 1%;
+                margin: 1%;
                 border-radius: 20px;
                 section{
-                    padding: 10px;
-                    div{
+                    padding: 1%;
+                    .album{
+                        width: 10vh;
+                        height: 10vh;
                         img{
-                            width: 100px;
-                            height: 100px;
-                            margin: 10px;
-                            padding: 10px;
+                        width: 10vh;
+                        height: 10vh;
+                        margin: 3%;
                         }
                     }
-                    div{
+                    .nombre{
+                        width: 50%;
                         display: flex;
                         flex-direction: column;
                         h3{
                             color: white;
                             -webkit-text-stroke: 1px black;
-                            font-size: 30px;
-                            margin: 5px;
-                            padding: 5px;
+                            font-size: 2vw;
+                            margin: 1%;
+                            padding: 2%;
                             text-align: center;
                         }
                         p{
                             color: white;
-                            margin: 5px;
-                            padding: 5px;
+                            margin: 1%;
+                            padding: 2%;
+                            font-size: 1.5vw;
                             text-align: center;
                         }
                     }
                 }
-                div{
+                .audio{
+                    audio{
+                        width: 100%;
+                    }
+                }
+                .video{
                     display: flex;
                     justify-content: center;
                     a{
-                        font-size: 50px;
+                        font-size: 4vw;
                         color: white;
                         transition: all 0.5s;
-                        padding: 5px;
+                        padding: 2%;
                         margin: 0;
                         text-align: center;
                     } 
@@ -93,11 +103,20 @@ main{
     text-align: center;
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 0.1%;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 10;  
+    z-index: 1;  
     font-size: small;  
+}
+@media (max-width:800px){
+    ul{
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
