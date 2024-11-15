@@ -1,4 +1,4 @@
-const $body = document.querySelector("#inicio")
+const $body = document.querySelector("body")
 const $MD = document.querySelector("#MD")
 
 function modoOscuro() {

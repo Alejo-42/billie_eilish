@@ -30,45 +30,18 @@ body{
     .carrusel{
         margin: 5vh;
         .album{
-            margin: 1vh;
             h5{
+                width: 100%;
                 margin: 0;
+                text-align: center;
                 a{
+                    padding: 1vh;
                     -webkit-text-stroke: 2px black;
                     color: white;
                     text-decoration: none;
-                    font-size: 3rem;
+                    font-size: 4rem;
                 }
             }
-        }
-    }
-    .btn-albumes{
-        button{
-            left: 50%;
-            background-color: black;
-            border: solid 2px white;
-            padding: 1vh;
-            a{
-                -webkit-text-stroke: 0.05rem black;
-                font-weight: bolder;
-                text-decoration: none;
-                color: white;
-            }
-        }
-        .btn-hmhas{    
-            background-color: blue;
-        }
-        .btn-hte{
-            background-color: gold;
-        }
-        .btn-wwafawdwg{
-            background-color: black;
-        }
-        .btn-dsam{
-            background-color: orangered;
-        }
-        .btn-as{
-            background-color: brown;
         }
     }
         h2{
@@ -79,9 +52,13 @@ body{
             font-size: 5rem;
         }
 }
+.btn-albumes{
+
+}
 main{
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 nav{
     padding: 0;
@@ -123,7 +100,7 @@ nav{
 footer{
     background-color: black;
     color: white;
-    padding: 1%;
+    padding: 0;
     margin: 0;
     padding-bottom: 0;
     h3{
@@ -200,7 +177,7 @@ footer{
         text-align: center;
         background-color: black;
         color: white;
-        padding: 1%;
+        padding: 1px;
         width: 100%;
         font-size: small; 
         position:sticky;
