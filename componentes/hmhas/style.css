@@ -84,7 +84,7 @@ main{
                         font-size: 5vw;
                         color: white;
                         transition: all 0.5s;
-                        padding: 5px;
+                        padding: 5%;
                         margin: 0;
                         text-align: center;
                     } 
@@ -121,7 +121,7 @@ main{
                 flex-direction: column;
                 align-items: center;
                 li{
-                    width: 50vw;
+                    width: 50%;
                     .nya{
                         .album{
                             img{
