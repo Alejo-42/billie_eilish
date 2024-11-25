@@ -24,51 +24,73 @@ body{
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
-    margin: 0;
+}
+.btn-albumes{
+    display: none;
+    a{
+        text-decoration: none;
+        color: white;
+        background-color:dimgrey;
+        padding: 1vh;
+        margin: 1vh;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: all 0.5s;
+        border: solid 3px black;
+    }
+    .hmhas{
+        color: blue;
+    }
+    .hmhas:hover{
+        color: white;
+        background-color: blue;
+    }
+    .hte{
+        color: gold;
+    }
+    .hte:hover{
+        color: white;
+        background-color: gold;
+    }
+    .wwafawdwg{
+        color: black;
+    }
+    .wwafawdwg:hover{
+        color: white;
+        background-color: black;
+    }
+    .dsam{
+        color: orangered;
+    }
+    .dsam:hover{
+        color: white;
+        background-color: orangered;
+    }
+    .as{
+        color: white;
+    }
+    .as:hover{
+        color: gray;
+        background-color: white;
+    }
 }
 .albumes{
     .carrusel{
         margin: 5vh;
         .album{
-            margin: 1vh;
             h5{
+                width: 100%;
                 margin: 0;
+                text-align: center;
                 a{
+                    padding: 1vh;
                     -webkit-text-stroke: 2px black;
                     color: white;
                     text-decoration: none;
-                    font-size: 3rem;
+                    font-size: 4rem;
                 }
             }
-        }
-    }
-    .btn-albumes{
-        button{
-            left: 50%;
-            background-color: black;
-            border: solid 2px white;
-            padding: 1vh;
-            a{
-                -webkit-text-stroke: 0.05rem black;
-                font-weight: bolder;
-                text-decoration: none;
-                color: white;
-            }
-        }
-        .btn-hmhas{    
-            background-color: blue;
-        }
-        .btn-hte{
-            background-color: gold;
-        }
-        .btn-wwafawdwg{
-            background-color: black;
-        }
-        .btn-dsam{
-            background-color: orangered;
-        }
-        .btn-as{
-            background-color: brown;
         }
     }
         h2{
@@ -76,12 +98,13 @@ body{
             background-color: white;
             padding: 1rem;
             text-align: center;
-            font-size: 5rem;
+            font-size: 4rem;
         }
 }
 main{
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 nav{
     padding: 0;
@@ -114,16 +137,17 @@ nav{
     padding: 2%;
     h1{
         text-align: center;
-        font-size: 6rem;
+        font-size: 5rem;
     }
     p{
+        font-size: 1.5rem;
         flex-wrap: wrap;
     }
 }
 footer{
     background-color: black;
     color: white;
-    padding: 1%;
+    padding: 0;
     margin: 0;
     padding-bottom: 0;
     h3{
@@ -182,7 +206,10 @@ footer{
             display: flex;
             justify-content:center;
             align-items: center;
-                button{
+            position: fixed;
+            bottom: 5vh;
+            right: 5vh;
+            button{
                     border: solid 1px white;
                     padding: 1%;
                     height: 5vh;
@@ -203,7 +230,7 @@ footer{
         text-align: center;
         background-color: black;
         color: white;
-        padding: 0.1%;
+        padding: 1%;
         width: 100%;
         font-size: small; 
         position:sticky;
@@ -211,6 +238,11 @@ footer{
     }    
 }
 @media (max-width:800px){
+    .inicio{
+        h1{
+            font-size: 10vw;
+        }
+    }
     .albumes{
         .carrusel{
             .album{
@@ -223,9 +255,16 @@ footer{
             }
         }
         h2{
-            font-size: 3rem;
+            font-size: 10vw;
         }
     }
+}
+@media (max-width: 767px) {
+    .btn-albumes{
+        display: flex;
+    }
+  }
+@media (max-width:570px) {
     footer{
         section{
             display: flex;
@@ -244,24 +283,7 @@ footer{
         }
     }
 }
-@media (max-width: 768px) {
-    .albumes{
-        .carrusel{
-            .album{
-                h5{
-                    display: none;
-                }
-            }
-        }
-        .btn-albumes{
-            button{
-                display: inline-flex;
-                flex-wrap: wrap;
-            }
-        }
-    }
-  }
-@media (max-width:450px) {
+@media (max-width:400px) {
     header{
         position: relative;
         top: 0;
@@ -275,11 +297,6 @@ footer{
                 flex-direction: column;
                 flex-wrap: wrap;
             }
-        }
-    }
-    .inicio{
-        h1{
-            font-size:4rem;
         }
     }
 }
