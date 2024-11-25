@@ -201,8 +201,6 @@ footer{
             }
         .btmd{
             position: fixed;
-            bottom: 5vh;
-            right: 2vw;
             display: flex;
             justify-content:center;
             align-items: center;
@@ -230,7 +228,7 @@ footer{
         text-align: center;
         background-color: black;
         color: white;
-        padding: 1%;
+        padding: 1px;
         width: 100%;
         font-size: small; 
         position:sticky;
