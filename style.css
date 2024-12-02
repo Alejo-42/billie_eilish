@@ -27,54 +27,82 @@ body{
 }
 .btn-albumes{
     display: none;
-    flex-wrap: wrap;
+    padding: 1vh;
     a{
-        text-decoration: none;
-        color: white;
-        background-color:dimgrey;
         padding: 1vh;
-        margin: 1vh;
-        font-size: 1.5rem;
-        border-radius: 10px;
-        font-weight: bold;
-        transition: all 0.5s;
-        border: solid 3px black;
+        button{
+            color: black;
+            background-color: gray;
+            border: solid 2px black;
+            padding: 1%;
+            transition: all 0.5s;
+            border-radius: 10px;
+        }
+        button:hover{
+            color: white;
+            background-color: black;
+        }
+        .hmhas{
+            color: blue;
+        }
+        .hmhas:hover{
+            background-color: blue;
+            color: white;
+        }
+        .hte{
+            color: gold;
+        }
+        .hte:hover{
+            background-color: gold;
+            color: white;
+        }
+        .wwafawdwg{
+            color: black;
+        }   
+        .wwafawdwg:hover{
+            color: white;
+            background-color: black;
+        }
+        .dsam{
+            color: orangered;
+        }
+        .dsam:hover{
+            background-color: orangered;
+            color: white;
+        }
+        .as{
+            color: crimson;
+        }
+        .as:hover{
+            background-color: crimson;
+            color: white;
+        }
     }
-    .hmhas{
-        color: blue;
-    }
-    .hmhas:hover{
-        color: white;
-        background-color: blue;
-    }
-    .hte{
-        color: gold;
-    }
-    .hte:hover{
-        color: white;
-        background-color: gold;
-    }
-    .wwafawdwg{
-        color: black;
-    }
-    .wwafawdwg:hover{
-        color: white;
+    .cerrar{
+        padding: 1vh;
+        border: solid 2px gray;
         background-color: black;
-    }
-    .dsam{
-        color: orangered;
-    }
-    .dsam:hover{
         color: white;
-        background-color: orangered;
+        transition: all 0.5s;
     }
-    .as{
-        color: wheat;
+    .cerrar:hover{
+        color: black;
+        background-color: white;
     }
-    .as:hover{
-        color: gray;
-        background-color: wheat;
+}
+    .abrir{
+        margin: 1vh;
+        padding: 1vh;
+        display: none;
+        border: solid 2px gray;
+        background-color: black;
+        color: white;
+        transition: all 0.5s;
+
     }
+    .abrir:hover{
+        color: black;
+        background-color: white;
 }
 .albumes{
     .carrusel{
@@ -259,10 +287,26 @@ footer{
     }
 }
 @media (max-width: 767px) {
-    .btn-albumes{
-        display: flex;
+    .abrir{
+        display: block;
     }
-  }
+    .cerrar{
+        display: block;
+    }
+    .btn-albumes{
+        opacity: 0;
+        visibility: hidden;
+    }
+    /*CLASES QUE SE AGREGARAN CON JS*/
+    .ocultarBoton{
+        display: none;
+    }
+    .visible{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+}
 @media (max-width:570px) {
     footer{
         section{
@@ -284,12 +328,9 @@ footer{
 }
 @media (max-width:400px) {
     header{
-        position: relative;
-        top: 0;
         display: flex;
         flex-direction: column;
         text-align: center;
-        align-items: center;
         nav{
             ul{
                 display: flex;
@@ -311,12 +352,5 @@ footer{
     }
     .inicio{
         background-color: gray;
-    }
-    .albumes{
-        .album{
-            h5{
-                font-size: 2rem;
-            }
-        }
     }
 }
