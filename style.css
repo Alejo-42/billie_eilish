@@ -16,6 +16,8 @@ header{
     background-color: chocolate ;
 }
 body{
+    display: flex;
+    flex-direction: column;
     flex: 1;
     min-height: 100vh;
     background-image: url(/assets/FONDOS/fondo\ general.jpeg);
@@ -138,25 +140,24 @@ main{
 nav{
     padding: 0;
     margin: 0;
+    justify-content: start;
     ul{
         display: flex;
         padding: 0;
         margin: 0;
         li{
             list-style-type: none;
-            padding: 10px;
-            color: white;
+            padding: 2vh;
             a{
+                padding: 2vh;
                 text-decoration: none;
                 color: white;
                 transition: all 0.5s;
+                border-radius: 10px;
             }
             a:hover{
                 color: black;
                 background-color: white;
-                padding: 1vh;
-                font-weight: bold;
-                border-radius: 10px;
             }
         }
     }
