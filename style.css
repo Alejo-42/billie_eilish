@@ -30,54 +30,25 @@ body{
 .btn-albumes{
     display: none;
     padding: 1vh;
-    a{
-        padding: 1vh;
-        button{
-            color: black;
-            background-color: gray;
-            border: solid 2px black;
-            padding: 1%;
-            transition: all 0.5s;
-            border-radius: 10px;
-        }
-        button:hover{
-            color: white;
-            background-color: black;
-        }
-        .hmhas{
-            color: blue;
-        }
-        .hmhas:hover{
-            background-color: blue;
-            color: white;
-        }
-        .hte{
-            color: gold;
-        }
-        .hte:hover{
-            background-color: gold;
-            color: white;
-        }
-        .wwafawdwg{
-            color: black;
-        }   
-        .wwafawdwg:hover{
-            color: white;
-            background-color: black;
-        }
-        .dsam{
-            color: orangered;
-        }
-        .dsam:hover{
-            background-color: orangered;
-            color: white;
-        }
-        .as{
-            color: crimson;
-        }
-        .as:hover{
-            background-color: crimson;
-            color: white;
+    ul{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            li{
+                list-style-type: none;
+                padding: 2vh;
+                a{
+                    text-decoration: none;
+                    img{
+                        height: 20vh;
+                    }
+                }
+            }
         }
     }
     .cerrar{
@@ -189,45 +160,41 @@ footer{
         display: flex;
         justify-content: space-between;
             .rs{
-            display: flex;
             padding: 0;
             margin: 0;
-            article{
+            ul{
                 display: flex;
-                padding: 1vh;
-                margin: 1vh;
-                width: 20vh;
-                a{
-                    justify-content: center;
-                    width: 100%;
-                    display: flex;
-                    margin: 5%;
-                    padding: 5%;
-                    text-decoration: none;
-                    transition: all 0.8s;
-                    color: white;
-                    border-radius: 10px;
-                    font-weight: bolder;
-                    i{
-                        padding: 4%;
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style-type: none;
+                    margin: 3vh;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        padding: 3vh;
+                        transition: all 0.5s;
+                        border-radius: 50%;
+                        border: solid 3px white;
+                        i{
+                            scale: 2;
+                        }
                     }
-                }
-                .face:hover{
-                    color: blue;
+                    a:hover{
                         background-color: white;
-                        font-weight: bolder;
+                        color: black;
+                    }
+                    .face:hover{
+                        color: blue;
                     }
                     .ig:hover{
-                        color: rgb(255, 57, 156);
-                        background-color: white;
-                        font-weight: bolder;
+                        color:deeppink;
                     }
                     .tt:hover{
-                        color: black;
-                        background-color: white;
-                        font-weight: bolder;
+                        color: darkslategray;
                     }
                 }
+            }
             }
         .btmd{
             position: fixed;
@@ -261,7 +228,7 @@ footer{
         padding: 1px;
         width: 100%;
         font-size: small; 
-        position:sticky;
+        position:static;
         z-index: 1;
     }    
 }
@@ -288,6 +255,9 @@ footer{
     }
 }
 @media (max-width: 767px) {
+    .carrusel{
+        display: none;
+    }
     .abrir{
         display: block;
     }
@@ -299,7 +269,7 @@ footer{
         visibility: hidden;
     }
     /*CLASES QUE SE AGREGARAN CON JS*/
-    .ocultarBoton{
+    .ocultar{
         display: none;
     }
     .visible{
@@ -343,15 +313,16 @@ footer{
 }
 .modoOscuro{
     color: white;
+    background-color: black;
     header{
-            background-color: dimgray;
+            background-color:rgb(15, 15, 15);
         }
     .albumes{
         h2{
-            background-color: gray;
+            background-color:rgb(24, 24, 24);
         }
     }
     .inicio{
-        background-color: gray;
+        background-color: rgb(24, 24, 24);
     }
 }

@@ -11,11 +11,11 @@ function modoOscuro() {
 }
 function abrir() {
     $albumes.classList.add("visible")
-    $abrir.classList.add("ocultarBoton")
+    $abrir.classList.add("ocultar")
 }
 function cerrar() {
     $albumes.classList.remove("visible")
-    $abrir.classList.remove("ocultarBoton")
+    $abrir.classList.remove("ocultar")
 }
 
 $MD.addEventListener("click",modoOscuro)
