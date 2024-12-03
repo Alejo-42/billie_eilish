@@ -45,13 +45,29 @@ body{
                 a{
                     text-decoration: none;
                     img{
-                        height: 20vh;
+                        width: 15vw;
+                        transition: all 0.5s;
+                    }
+                    .text{
+                        visibility: hidden;
+                        position: absolute;
+                        background-color: rgba(255, 255, 255, 0.5);
+                        color: black;
+                        padding: 1%;
+                        border-radius: 5px;
+                    }
+                    img:hover + .text{
+                        visibility: visible;
+                    }
+                    img:hover{
+                        scale: 1.2;
                     }
                 }
             }
         }
     }
     .cerrar{
+        width: 100%;
         padding: 1vh;
         border: solid 2px gray;
         background-color: black;
@@ -63,19 +79,20 @@ body{
         background-color: white;
     }
 }
-    .abrir{
-        margin: 1vh;
-        padding: 1vh;
-        display: none;
-        border: solid 2px gray;
-        background-color: black;
-        color: white;
-        transition: all 0.5s;
+.abrir{
+    width: 100%;
+    margin: 1vh;
+    padding: 1vh;
+    display: none;
+    border: solid 2px gray;
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
 
-    }
-    .abrir:hover{
-        color: black;
-        background-color: white;
+}
+.abrir:hover{
+    color: black;
+    background-color: white;
 }
 .albumes{
     .carrusel{
@@ -108,30 +125,32 @@ main{
     flex-direction: column;
     flex: 1;
 }
-nav{
-    padding: 0;
-    margin: 0;
-    justify-content: start;
-    ul{
-        display: flex;
+header{
+    nav{
         padding: 0;
         margin: 0;
-        li{
-            list-style-type: none;
-            padding: 2vh;
-            a{
+        justify-content: start;
+        ul{
+            display: flex;
+            padding: 0;
+            margin: 0;
+            li{
+                list-style-type: none;
                 padding: 2vh;
-                text-decoration: none;
-                color: white;
-                transition: all 0.5s;
-                border-radius: 10px;
-            }
-            a:hover{
-                color: black;
-                background-color: white;
+                a{
+                    padding: 2vh;
+                    text-decoration: none;
+                    color: white;
+                    transition: all 0.5s;
+                    border-radius: 10px;
+                }
+                a:hover{
+                    color: black;
+                    background-color: white;
+                }
             }
         }
-    }
+    }    
 }
 .inicio{
     background-color: white;
@@ -172,7 +191,7 @@ footer{
                     a{
                         text-decoration: none;
                         color: white;
-                        padding: 3vh;
+                        padding: 1.4vw;
                         transition: all 0.5s;
                         border-radius: 50%;
                         border: solid 3px white;
@@ -230,6 +249,7 @@ footer{
         font-size: small; 
         position:static;
         z-index: 1;
+        flex-wrap: wrap;
     }    
 }
 @media (max-width:800px){
