@@ -1,20 +1,20 @@
 const $body = document.querySelector("body")
 const $MD = document.querySelector("#MD")
 
-const $abrir = document.querySelector(".abrir")
-const $cerrar = document.querySelector(".cerrar")
-const $albumes = document.querySelector(".btn-albumes")
+const $abrir = document.querySelector("#abrir")
+const $cerrar = document.querySelector("#cerrar")
+const $albumes = document.querySelector(".albumes-ocultos")
 
 function modoOscuro() {
     $body.classList.toggle("modoOscuro")
     $MD.textContent = $MD.textContent === "DARK MODE" ? "NORMAL MODE" : "DARK MODE"
 }
 function abrir() {
-    $albumes.classList.add("visible")
+    $albumes.classList.remove("ocultar")
     $abrir.classList.add("ocultar")
 }
 function cerrar() {
-    $albumes.classList.remove("visible")
+    $albumes.classList.add("ocultar")
     $abrir.classList.remove("ocultar")
 }
 

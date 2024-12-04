@@ -10,21 +10,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <header>
+    <header id="Inicio">
         <nav>
+          <div>
+            <img src="/assets/FONDOS/blohsh-icon.ico" alt="Blohsh Icon">
+          </div>
             <ul>
-             
-                <li><a href="#inicio"><i class="fa-solid fa-house"></i> INICIO</a></li>
-                <li><a href="#albumes"><i class="fa-solid fa-compact-disc"></i> ALBÚMES</a></li>
-                <li><a href="#redes"><i class="fa-solid fa-globe"></i> REDES SOCIALES</a></li>
+                <li><a href="#inicio"><i class="fa-solid fa-house"></i> HOME</a></li>
+                <li><a href="#albumes"><i class="fa-solid fa-compact-disc"></i> ALBUMS</a></li>
+                <li><a href="#redes"><i class="fa-solid fa-globe"></i> SOCIAL NETWORKS</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="inicio" class="inicio">
             <h1>BILLIE EILISH</h1>
-            <p>Hi!, my name is Ale, I'm a novice programmer, I create this web page for all the Billie Eilish's fans I hope that they love this...❤️</p>
-            <p>WELCOME!</p>
+            <p>Hello and Welcome!, my name is Ale, I'm a novice programmer, I create this web page for all the Billie Eilish's fans I hope that they love this...❤️</p>
           </section>
           <section id="albumes" class="albumes">
               <h2>ALBUMS</h2>
@@ -89,49 +90,39 @@
                   </button>
                 </div>
               </section>
-                <section class="btn-albumes">
-                  <button class="cerrar">CLOSE</button>
-                  <br>
-                    <ul>
-                      <section>
-                        <li>
-                          <a class="hmhas" href="/componentes/hmhas/index.html">
-                            <img src="/assets/HIT ME HARD AND SOFT/img/hmhas-icon-_2_.ico" alt="HMHAS">
-                            <span class="text">Hit Me Hard And Soft</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="hte" href="/componentes/hte/index.html">
-                            <img src="/assets/HAPPIER THAT EVER/img/hte-icon.ico" alt="HTE">
-                            <span class="text">Happier That Ever</span>
-                          </a>
-                        </li>
-                      </section>
-                      <section>
-                        <li>
-                          <a class="wwafawdwg" href="/componentes/wwafawdwg/index.html">
-                            <img src="/assets/WWAFAWDWG/img/wwafawdwg.ico" alt="WWAFAWDWG">
-                            <span class="text">When We All Fall Asleep, Where Do We Go?</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dsam" href="/componentes/dsam/index.html">
-                            <img src="/assets/DON'T SMILE AT ME/img/dont smile at me.ico" alt="DSAM">
-                            <span class="text">Don´t Smile At Me</span>
-                          </a>
-                        </li>
-                      </section>
-                      <section>  
-                        <li>
-                          <a class="as" href="/componentes/another songs/index.html">
-                            <img src="/assets/ANOTHER SONGS/img/wwimf be icon.jpeg" alt="AS">
-                            <span class="text">Another Songs</span>
-                          </a>
-                        </li>
-                      </section>
-                    </ul>
+          </section>
+          <section class="sect-oculta">
+            <div>
+              <button id="abrir"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+            <section class="albumes-ocultos ocultar">
+              <div>
+                <button id="cerrar"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+              <ul>
+                <section>
+                  <li>
+                    <a href="/componentes/hmhas/index.html"><img src="/assets/HIT ME HARD AND SOFT/img/hmhas-icon-_2_.ico" alt="HMHAS Icon"></a>
+                  </li>
+                  <li>
+                    <a href="/componentes/hte/index.html"><img src="/assets/HAPPIER THAT EVER/img/hte-icon.ico" alt="HTE Icon"></a>
+                  </li>
                 </section>
-                <button class="abrir">OPEN</button>
+                <section>
+                  <li>
+                    <a href="/componentes/wwafawdwg/index.html"><img src="/assets/WWAFAWDWG/img/wwafawdwg.ico" alt="WWAFAWDWG Icon"></a>
+                  </li>
+                  <li>
+                    <a href="/componentes/dsam/index.html"><img src="/assets/DON'T SMILE AT ME/img/dont smile at me.ico" alt="DSAM Icon"></a>
+                  </li>
+                </section>
+                <section>
+                  <li>
+                    <a href="/componentes/another songs/index.html"><img src="/assets/FONDOS/blohsh-icon.ico" alt="AS Icon"></a>
+                  </li>
+                </section>
+              </ul>
+            </section>
           </section>
     </main>
     <footer id="redes">
@@ -147,6 +138,9 @@
         <section class="btmd">
           <button id="MD">DARK MODE</button>
         </section>
+        <div>
+          <a href="#Inicio"><button class="volver"><i class="fa-solid fa-caret-up"></i></button></a>
+        </div>
       </section>
       <p class="derechos">Copyright reserved. &copy 2024</p>
     </footer>
