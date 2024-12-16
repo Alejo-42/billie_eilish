@@ -42,9 +42,7 @@ header{
             }
         }
         div{
-            width: 20%;
-            justify-content: end;
-            align-items: start;
+            justify-content: center;
             display: none;
             #abrirNav{
                 color: white;
@@ -292,9 +290,6 @@ footer{
                 font-size: 12vw;
             }
         }
-        .sect-oculta{
-            display: block;
-        }
     }
 }
 @media (max-width: 767px) {
@@ -304,10 +299,17 @@ footer{
                 display: none;
             }
         }
+        .sect-oculta{
+            display: block;
+        }
     }
+    .ocultar{
+        display: none;
+    }
+    .adios{
+        display: none;
+    }    
 }
-
-
 @media (max-width:570px) {
     header{
         nav{
@@ -343,25 +345,24 @@ footer{
                 display: flex;
                 flex-direction: column;
                 margin: 0;
-                article{
-                    margin: 0;
-                    padding: 0;
+                ul{
+                    li{
+                        a{
+                            padding: 4vw;
+                            border: 0px;
+                        }
+                    }
                 }
             }
             .btmd{
-                width: 100vw;
+                bottom: 1vh;
+                right: 12vw;
                 button{
                     position:absolute;
                 }
             }
         }
     }
-.adios{
-    display: none;
-}
-.ocultar{
-    display: none;
-}
 }
 .modoOscuro{
     color: white;
