@@ -1,7 +1,7 @@
-*,*::after,*::before{
-    padding: 0;
-    margin: 0;
+*::after,*::before{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -9,7 +9,154 @@ body{
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    background-image: url(/assets/GENERAL/img/Chihiro\ \(Billie\ Eilish\)\ PC\ Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 header{
     background-color: gray;
+    display: flex;
+    padding: 1vh;
+    nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        div{
+            margin: 2vh 2vh 2vh 10vh;
+            img{
+                width: 10vh;
+                transition: all 0.8s;
+            }
+            img:hover{
+                scale: 1.1;
+            }
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            li{
+                margin: 2vh;
+                list-style-type: none;
+                a{
+                    padding: 1vh;
+                    text-decoration: none;
+                    color: rgb(209, 209, 209);
+                    font-size: 2.5vh;
+                }
+            }
+        }
+    }
+}
+main{
+    flex: 1;
+    .inicio{
+        h2{
+            text-align: center;
+            margin: 1vh;
+            padding: 1vh;
+            font-size: 6vh;
+        }   
+        p{
+            font-size: 3vh;
+            margin: 1vh;
+        }
+    }
+    .albumes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            text-align: center;
+            margin: 1vh;
+            padding: 1vh;
+            font-size: 6vh;
+        }
+        .carrusel{
+            display: flex;
+            justify-content: center;
+            .carousel{
+                width: 70%;
+            }
+        }
+    }
+}
+footer{
+    background-color: black;
+    color: white;
+    .info-footer{
+        h2{
+            margin: 1vh;
+            padding: 2vh;
+        }
+        .redes{
+            ul{
+                display: flex;
+                margin: 3vh;
+                padding: 0;
+                li{
+                    list-style-type: none;
+                    margin: 1vh;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        transition: all 0.5s;
+                        padding: 2vh;
+                        border: solid 3px white;
+                        border-radius: 50%;
+                        i{
+                            scale: 2;
+                        }
+                    }
+                    a:hover{
+                        background-color: white;
+                    }
+                    .face:hover{
+                        color: blue;
+                    }
+                    .ig:hover{
+                        color: deeppink;
+                    }
+                    .tt:hover{
+                        color: darkslategray;
+                    }
+                }
+            }
+            .wsp{
+                p{
+                    flex-wrap: wrap;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        transition: all 0.5s;
+                        padding: 2vh;
+                        transition: all 0.5s;
+                        i{
+                            scale: 2;
+                        }
+                    }
+                    a:hover{
+                        color: green;
+                    }
+                }
+            }
+        }
+    }
+    .derechos{
+        margin: 0;
+        padding: 0;
+        position: static;
+        text-align: center;
+        font-size: small;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
 }
