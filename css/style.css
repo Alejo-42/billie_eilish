@@ -9,7 +9,7 @@ body{
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url(/assets/GENERAL/img/Chihiro\ \(Billie\ Eilish\)\ PC\ Wallpaper.jpg);
+    background-image: url(/assets/GENERAL/img/fondo\ general.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -46,23 +46,27 @@ header{
                     text-decoration: none;
                     color: rgb(209, 209, 209);
                     font-size: 2.5vh;
+                    transition: all 0.5s;
+                }
+                a:hover{
+                    color: white;
                 }
             }
         }
     }
 }
 main{
-    flex: 1;
     .inicio{
+        background-color: rgba(255, 255, 255, 0.8);
         h2{
             text-align: center;
-            margin: 1vh;
             padding: 1vh;
             font-size: 6vh;
         }   
         p{
             font-size: 3vh;
-            margin: 1vh;
+            padding: 1vh;
+            margin: 0;
         }
     }
     .albumes{
@@ -70,9 +74,10 @@ main{
         flex-direction: column;
         justify-content: center;
         h2{
+            background-color: rgba(255, 255, 255, 0.8);
             text-align: center;
-            margin: 1vh;
             padding: 1vh;
+            margin: 0;
             font-size: 6vh;
         }
         .carrusel{
@@ -80,13 +85,23 @@ main{
             justify-content: center;
             .carousel{
                 width: 70%;
+                padding: 3vh 0vh 2vh 0vh;
+                .carousel-item{
+                    h3{
+                        font-size: 6vh;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
             }
         }
     }
 }
 footer{
     background-color: black;
-    color: white;
+    color: rgb(196, 196, 196);
     .info-footer{
         h2{
             margin: 1vh;
@@ -99,20 +114,20 @@ footer{
                 padding: 0;
                 li{
                     list-style-type: none;
-                    margin: 1vh;
+                    margin: 2vh;
                     a{
                         text-decoration: none;
-                        color: white;
+                        color: rgb(196, 196, 196);
                         transition: all 0.5s;
                         padding: 2vh;
-                        border: solid 3px white;
+                        border: solid 3px rgb(196, 196, 196);
                         border-radius: 50%;
                         i{
                             scale: 2;
                         }
                     }
                     a:hover{
-                        background-color: white;
+                        background-color: rgb(196, 196, 196);
                     }
                     .face:hover{
                         color: blue;
@@ -127,10 +142,12 @@ footer{
             }
             .wsp{
                 p{
+                    padding: 2vh;
+                    margin: 0;
                     flex-wrap: wrap;
                     a{
                         text-decoration: none;
-                        color: white;
+                        color: rgb(196, 196, 196);
                         transition: all 0.5s;
                         padding: 2vh;
                         transition: all 0.5s;
@@ -153,10 +170,11 @@ footer{
         font-size: small;
         a{
             text-decoration: none;
-            color: white;
+            color: rgb(196, 196, 196);
         }
         a:hover{
             text-decoration: underline;
+            color: white;
         }
     }
 }
