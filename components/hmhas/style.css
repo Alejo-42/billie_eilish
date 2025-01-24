@@ -1,0 +1,120 @@
+*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/GENERAL/img/fondo\ hmhas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    background-color: white;
+        h1{
+            -webkit-text-stroke: 0.2vw black;
+            text-shadow: 5px 5px 10px black;
+            color: blue;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8vw;
+            padding: 3vh;
+        }
+}
+main{
+    ul{
+        div{
+            display: flex;
+            justify-content: space-evenly;
+            li{
+                list-style-type: none;
+                border-radius: 7%;
+                margin: 2vh;
+                padding: 2vh;
+                width: 30%;
+                background-color: rgba(0, 0, 255, 0.3);
+                .n-a{
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: 1vh;
+                    .album{
+                        img{
+                            padding: 2vh;
+                            width: 20vh;
+                        }
+                    }
+                    .nombre{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        text-align: center;
+                        color: white;
+                        h3{
+                            padding: 1vh;
+                            margin: 0;
+                            font-size: 2vw;
+                        }
+                        p{
+                            margin: 0;
+                            font-size: 1.4vw;
+                        }
+                    }
+                }
+                .a-v{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1vh;
+                    .audio{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        audio{
+                            width: 90%;
+                        }
+                    }
+                    .video{
+                        display: flex;
+                        justify-content: center;
+                        a{
+                            color: white;
+                            transition: all 0.3s;
+                            i{
+                                scale: 3;
+                                margin: 3vh;
+                            }
+                        }
+                        a:hover{
+                            color: rgba(0, 0, 0, 0);
+                            -webkit-text-stroke: 0.25px white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    .derechos{
+        color: white;
+        margin: 0;
+        padding: 0;
+        position: static;
+        text-align: center;
+        font-size: small;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: white;
+        }
+    }
+}
