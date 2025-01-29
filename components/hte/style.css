@@ -1,0 +1,235 @@
+*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/GENERAL/img/fondo\ hte.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: white;
+        h1{
+            -webkit-text-stroke: 0.2vw black;
+            text-shadow: 5px 5px 10px black;
+            color:gold;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8vw;
+            padding: 3vh;
+        }
+}
+main{
+    ul{
+        padding: 0;
+        div{
+            display: flex;
+            justify-content: space-evenly;
+            li{
+                list-style-type: none;
+                border-radius: 7%;
+                margin: 1vh;
+                padding: 1vh;
+                width: 30%;
+                background-color: rgba(255, 217, 0, 0.3);
+                .n-a{
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: 1vh;
+                    .album{
+                        img{
+                            padding: 2vh;
+                            width: 10vw;
+                        }
+                    }
+                    .nombre{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        text-align: center;
+                        color: white;
+                        h3{
+                            padding: 1vh;
+                            margin: 0;
+                            font-size: 2vw;
+                        }
+                        p{
+                            margin: 0;
+                            font-size: 1.4vw;
+                        }
+                    }
+                }
+                .a-v-s{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1vh;
+                    .audio{
+                        padding: 1vh;
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        audio{
+                            width: 90%;
+                        }
+                    }
+                    .video{
+                        padding: 1vh;
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        a{
+                            color: white;
+                            transition: all 0.3s;
+                            i{
+                                scale: 3;
+                                margin: 1vh;
+                                padding: 0;
+                            }
+                        }
+                        a:hover{
+                            color: rgba(0, 0, 0, 0);
+                            -webkit-text-stroke: 0.25px white;
+                        }
+                    }
+                    .significado{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .mostrar{
+                            text-decoration: none;
+                            cursor: pointer;
+                            color: white;
+                            padding: 1vw;
+                        }
+                        .meaning{
+                            background-color: white;
+                            padding: 1vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    .derechos{
+        color: white;
+        margin: 0;
+        padding: 0;
+        position: static;
+        text-align: center;
+        font-size: small;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: white;
+        }
+    }
+}
+@media (max-width:1200px) {
+    main{
+        ul{
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                li{
+                    width: 60%;
+                    border-radius: 25px;
+                    .n-a{
+                        .album{
+                            img{
+                                width: 18vw;
+                            }
+                        }
+                        .nombre{
+                            h3{
+                                font-size: 5vw;
+                            }
+                            p{
+                                font-size: 3vw;
+                                padding: 1vh;
+                            }
+                        }
+                    }
+                    .a-v-s{
+                        .audio{
+                            audio{
+                                width: 100%;
+                            }
+                        }
+                        .video{
+                            margin: 2vh;
+                            a{
+                                i{
+                                    margin: 1vh;
+                                    scale: 5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:600px) {
+    header{
+        h1{
+            font-size: 18vw;
+        }
+    }
+    main{
+        ul{
+            div{
+                li{
+                    width: 95%;
+                    .n-a{
+                        .album{
+                            img{
+                                width: 60%;
+                            }
+                        }
+                        .nombre{
+                            h3{
+                                font-size: 12vw;
+                            }
+                            p{
+                                font-size: 6vw;
+                            }
+                        }
+                    }
+                    .a-v-s{
+                        .audio{
+                            padding: 0;
+                        }
+                        .significado{
+                            a{
+                                font-size: 7vw;
+                            }
+                            div{
+                                font-size: 5vw;
+                                margin: 1vh;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

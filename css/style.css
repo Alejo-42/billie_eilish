@@ -131,7 +131,7 @@ main{
     }
 }
 footer{
-    padding: 1vw;
+    padding: 0;
     background-color: black;
     color: rgb(196, 196, 196);
     .info-footer{
@@ -153,14 +153,9 @@ footer{
                         color: rgb(196, 196, 196);
                         transition: all 0.5s;
                         padding: 2vh;
-                        border: solid 3px rgb(196, 196, 196);
-                        border-radius: 50%;
                         i{
                             scale: 2;
                         }
-                    }
-                    a:hover{
-                        background-color: rgb(196, 196, 196);
                     }
                     .face:hover{
                         color: blue;
@@ -197,9 +192,10 @@ footer{
         }
     }
     .derechos{
+        width: 100%;
         margin: 0;
         padding: 0;
-        position: static;
+        position: sticky;
         text-align: center;
         font-size: small;
         a{
