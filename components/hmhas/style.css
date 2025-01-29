@@ -12,6 +12,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
 }
 header{
     background-color: white;
@@ -29,14 +31,15 @@ header{
 }
 main{
     ul{
+        padding: 0;
         div{
             display: flex;
             justify-content: space-evenly;
             li{
                 list-style-type: none;
                 border-radius: 7%;
-                margin: 2vh;
-                padding: 2vh;
+                margin: 1vh;
+                padding: 1vh;
                 width: 30%;
                 background-color: rgba(0, 0, 255, 0.3);
                 .n-a{
@@ -46,7 +49,7 @@ main{
                     .album{
                         img{
                             padding: 2vh;
-                            width: 20vh;
+                            width: 10vw;
                         }
                     }
                     .nombre{
@@ -67,11 +70,12 @@ main{
                         }
                     }
                 }
-                .a-v{
+                .a-v-s{
                     display: flex;
                     flex-direction: column;
                     padding: 1vh;
                     .audio{
+                        padding: 1vh;
                         display: flex;
                         justify-content: center;
                         width: 100%;
@@ -80,19 +84,37 @@ main{
                         }
                     }
                     .video{
+                        padding: 1vh;
                         display: flex;
                         justify-content: center;
+                        width: 100%;
                         a{
                             color: white;
                             transition: all 0.3s;
                             i{
                                 scale: 3;
-                                margin: 3vh;
+                                margin: 1vh;
+                                padding: 0;
                             }
                         }
                         a:hover{
                             color: rgba(0, 0, 0, 0);
                             -webkit-text-stroke: 0.25px white;
+                        }
+                    }
+                    .significado{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .mostrar{
+                            text-decoration: none;
+                            cursor: pointer;
+                            color: white;
+                            padding: 1vw;
+                        }
+                        .meaning{
+                            background-color: white;
+                            padding: 1vw;
                         }
                     }
                 }
@@ -115,6 +137,99 @@ footer{
         a:hover{
             text-decoration: underline;
             color: white;
+        }
+    }
+}
+@media (max-width:1200px) {
+    main{
+        ul{
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                li{
+                    width: 60%;
+                    border-radius: 25px;
+                    .n-a{
+                        .album{
+                            img{
+                                width: 18vw;
+                            }
+                        }
+                        .nombre{
+                            h3{
+                                font-size: 5vw;
+                            }
+                            p{
+                                font-size: 3vw;
+                                padding: 1vh;
+                            }
+                        }
+                    }
+                    .a-v-s{
+                        .audio{
+                            audio{
+                                width: 100%;
+                            }
+                        }
+                        .video{
+                            margin: 2vh;
+                            a{
+                                i{
+                                    margin: 1vh;
+                                    scale: 5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:600px) {
+    header{
+        h1{
+            font-size: 18vw;
+        }
+    }
+    main{
+        ul{
+            div{
+                li{
+                    width: 95%;
+                    .n-a{
+                        .album{
+                            img{
+                                width: 60%;
+                            }
+                        }
+                        .nombre{
+                            h3{
+                                font-size: 12vw;
+                            }
+                            p{
+                                font-size: 6vw;
+                            }
+                        }
+                    }
+                    .a-v-s{
+                        .audio{
+                            padding: 0;
+                        }
+                        .significado{
+                            a{
+                                font-size: 7vw;
+                            }
+                            div{
+                                font-size: 5vw;
+                                margin: 1vh;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
