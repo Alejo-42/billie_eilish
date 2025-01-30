@@ -1,4 +1,4 @@
-// Getting Older (1)
+// COPYCAT (1)
 const botonMostrar1 = document.querySelector('#mostrar1');
 const significado1 = document.querySelector('#meaning1');
 
@@ -14,7 +14,7 @@ function mostrarOcultarDescripcion1() {
 
 botonMostrar1.addEventListener('click', mostrarOcultarDescripcion1)
 
-// I Didn't Change My Number (2)
+// idontwannabeyouanymore (2)
 const botonMostrar2 = document.querySelector('#mostrar2');
 const significado2 = document.querySelector('#meaning2');
 
@@ -30,7 +30,7 @@ function mostrarOcultarDescripcion2() {
 
 botonMostrar2.addEventListener('click', mostrarOcultarDescripcion2);
 
-// Billie Bossa Nova (3)
+// my boy (3)
 const botonMostrar3 = document.querySelector('#mostrar3');
 const significado3 = document.querySelector('#meaning3');
 
@@ -46,7 +46,7 @@ function mostrarOcultarDescripcion3() {
 
 botonMostrar3.addEventListener('click', mostrarOcultarDescripcion3);
 
-// my future (4)
+// watch (4)
 
 const botonMostrar4 = document.querySelector('#mostrar4');
 const significado4 = document.querySelector('#meaning4');
@@ -63,7 +63,7 @@ function mostrarOcultarDescripcion4() {
 
 botonMostrar4.addEventListener('click', mostrarOcultarDescripcion4);
 
-// Oxytocin (5)
+// party favor (5)
 
 const botonMostrar5 = document.querySelector('#mostrar5');
 const significado5 = document.querySelector('#meaning5');
@@ -80,7 +80,7 @@ function mostrarOcultarDescripcion5() {
 
 botonMostrar5.addEventListener('click', mostrarOcultarDescripcion5);
 
-// GOLDWING (6)
+// bellyache (6)
 
 const botonMostrar6 = document.querySelector('#mostrar6');
 const significado6 = document.querySelector('#meaning6');
@@ -97,7 +97,7 @@ function mostrarOcultarDescripcion6() {
 
 botonMostrar6.addEventListener('click', mostrarOcultarDescripcion6);
 
-// Lost Cause (7)
+// ocean eyes (7)
 
 const botonMostrar7 = document.querySelector('#mostrar7');
 const significado7 = document.querySelector('#meaning7');
@@ -115,7 +115,7 @@ function mostrarOcultarDescripcion7() {
 botonMostrar7.addEventListener('click', mostrarOcultarDescripcion7);
 
 
-// Halley's Comet (8)
+// hostage (8)
 
 const botonMostrar8 = document.querySelector('#mostrar8');
 const significado8 = document.querySelector('#meaning8');
@@ -132,7 +132,7 @@ function mostrarOcultarDescripcion8() {
 
 botonMostrar8.addEventListener('click', mostrarOcultarDescripcion8);
 
-// Not My Responsability (9)
+// &burn (9)
 
 const botonMostrar9 = document.querySelector('#mostrar9');
 const significado9 = document.querySelector('#meaning9');
@@ -148,124 +148,3 @@ function mostrarOcultarDescripcion9() {
 }
 
 botonMostrar9.addEventListener('click', mostrarOcultarDescripcion9);
-
-// OverHeated (10)
-
-const botonMostrar10 = document.querySelector('#mostrar10');
-const significado10 = document.querySelector('#meaning10');
-
-function mostrarOcultarDescripcion10() {
-    if (significado10.style.display === 'none') {
-        significado10.style.display = 'block';
-        botonMostrar10.textContent = 'Ocultar';
-    } else {
-        significado10.style.display = 'none';
-        botonMostrar10.textContent = 'Significado';
-    }
-}
-
-botonMostrar10.addEventListener('click', mostrarOcultarDescripcion10);
-
-// Everybody Dies (11)
-
-const botonMostrar11 = document.querySelector('#mostrar11');
-const significado11 = document.querySelector('#meaning11');
-
-function mostrarOcultarDescripcion11() {
-    if (significado11.style.display === 'none') {
-        significado11.style.display = 'block';
-        botonMostrar11.textContent = 'Ocultar';
-    } else {
-        significado11.style.display = 'none';
-        botonMostrar11.textContent = 'Significado';
-    }
-}
-
-botonMostrar11.addEventListener('click', mostrarOcultarDescripcion11);
-
-// Your Power (12)
-
-const botonMostrar12 = document.querySelector('#mostrar12');
-const significado12 = document.querySelector('#meaning12');
-
-function mostrarOcultarDescripcion12() {
-    if (significado12.style.display === 'none') {
-        significado12.style.display = 'block';
-        botonMostrar12.textContent = 'Ocultar';
-    } else {
-        significado12.style.display = 'none';
-        botonMostrar12.textContent = 'Significado';
-    }
-}
-
-botonMostrar12.addEventListener('click', mostrarOcultarDescripcion12);
-
-// NDA (13)
-
-const botonMostrar13 = document.querySelector('#mostrar13');
-const significado13 = document.querySelector('#meaning13');
-
-function mostrarOcultarDescripcion13() {
-    if (significado13.style.display === 'none') {
-        significado13.style.display = 'block';
-        botonMostrar13.textContent = 'Ocultar';
-    } else {
-        significado13.style.display = 'none';
-        botonMostrar13.textContent = 'Significado';
-    }
-}
-
-botonMostrar13.addEventListener('click', mostrarOcultarDescripcion13);
-
-// Therefore I Am (14)
-
-const botonMostrar14 = document.querySelector('#mostrar14');
-const significado14 = document.querySelector('#meaning14');
-
-function mostrarOcultarDescripcion14() {
-    if (significado14.style.display === 'none') {
-        significado14.style.display = 'block';
-        botonMostrar14.textContent = 'Ocultar';
-    } else {
-        significado14.style.display = 'none';
-        botonMostrar14.textContent = 'Significado';
-    }
-}
-
-botonMostrar14.addEventListener('click', mostrarOcultarDescripcion14);
-
-
-// Happier Than Ever (15)
-
-const botonMostrar15 = document.querySelector('#mostrar15');
-const significado15 = document.querySelector('#meaning15');
-
-function mostrarOcultarDescripcion15() {
-    if (significado15.style.display === 'none') {
-        significado15.style.display = 'block';
-        botonMostrar15.textContent = 'Ocultar';
-    } else {
-        significado15.style.display = 'none';
-        botonMostrar15.textContent = 'Significado';
-    }
-}
-
-botonMostrar15.addEventListener('click', mostrarOcultarDescripcion15);
-
-
-// Male Fantasy (16)
-
-const botonMostrar16 = document.querySelector('#mostrar16');
-const significado16 = document.querySelector('#meaning16');
-
-function mostrarOcultarDescripcion16() {
-    if (significado16.style.display === 'none') {
-        significado16.style.display = 'block';
-        botonMostrar16.textContent = 'Ocultar';
-    } else {
-        significado16.style.display = 'none';
-        botonMostrar16.textContent = 'Significado';
-    }
-}
-
-botonMostrar16.addEventListener('click', mostrarOcultarDescripcion16);

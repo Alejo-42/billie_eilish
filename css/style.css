@@ -5,7 +5,6 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: gray;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -13,6 +12,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     display: flex;
     flex-direction: column;
 }
@@ -114,6 +114,7 @@ main{
             .carousel{
                 width: 70%;
                 padding: 3vh 0vh 2vh 0vh;
+                transition: all 0.8s;
                 .carousel-item{
                     h3{
                         font-size: 6vh;
@@ -123,6 +124,9 @@ main{
                         }
                     }
                 }
+            }
+            .carousel:hover{
+                scale: 1.02;
             }
         }
         .albumes-ocultos{
@@ -143,16 +147,16 @@ footer{
         .redes{
             ul{
                 display: flex;
-                margin: 3vh;
-                padding: 0;
+                padding: 1vh;
+                margin: 0;
                 li{
                     list-style-type: none;
-                    margin: 2vh;
+                    margin: 1vh 3vh 1vh 3vh;
                     a{
                         text-decoration: none;
                         color: rgb(196, 196, 196);
                         transition: all 0.5s;
-                        padding: 2vh;
+                        padding: 1vh;
                         i{
                             scale: 2;
                         }
@@ -240,6 +244,9 @@ footer{
     }
 }
 @media (max-width:767px) {
+    body{
+        background-image: url(/assets/GENERAL/img/fondo\ general\ cel.jpg);
+    }
     header{
         nav{
             display: flex;
@@ -303,12 +310,20 @@ footer{
             .redes{
                 ul{
                     justify-content: center;
+                    li{
+                        margin: 1vh 5vh 1vh 5vh;
+                    }
                 }
             }
             .wsp{
                 p{
                     flex-wrap: wrap;
-                    font-size: 6vw;
+                    font-size: 5vw;
+                    a{
+                        i{
+                            scale: 1.4;
+                        }
+                    }
                 }
             }
         }

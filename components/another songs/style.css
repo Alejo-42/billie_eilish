@@ -7,7 +7,7 @@ body{
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url(/assets/GENERAL/img/fondo\ dsam.jpg);
+    background-image: url(/assets/GENERAL/img/fondo\ as.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -41,7 +41,7 @@ main{
                 margin: 1vh;
                 padding: 1vh;
                 width: 30%;
-                background-color: rgba(255, 68, 0, 0.3);
+                background-color: rgba(172, 255, 47, 0.3);
                 .n-a{
                     display: flex;
                     justify-content: space-evenly;
@@ -190,7 +190,7 @@ footer{
 }
 @media (max-width:600px) {
     body{
-        background-image: url(/assets/GENERAL/img/fondo\ dsam\ cel.jpg);
+        background-image: url(/assets/GENERAL/img/fondo\ as\ cel.jpg);
     }
     header{
         h1{
