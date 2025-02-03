@@ -15,3 +15,17 @@ function cerrar() {
 $abrir.addEventListener("click",abrir)
 $cerrar.addEventListener("click",cerrar)
 
+let $abrirAlbumes = document.querySelector('#abrirAlbumes')
+let $albums = document.querySelector('#albums')
+
+
+function abrirAlbum() {
+    if ($albums.style.display === 'none') {
+        $albums.style.display = 'block'
+        $abrirAlbumes.textContent = 'CLOSE'
+    } else {
+        $albums.style.display = 'none'
+        $abrirAlbumes.textContent = 'OPEN'
+    }
+}
+$abrirAlbumes.addEventListener('click',abrirAlbum)

@@ -39,6 +39,7 @@ header{
             padding: 0;
             display: none;
             width: 100%;
+            border: 0;
             background-color: rgba(0, 0, 0, 0);
             color: white;
             i{
@@ -279,6 +280,18 @@ footer{
             }
             .albumes-ocultos{
                 display: block;
+                div{
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    button{
+                        width: 100%;
+                        background-color: black;
+                        color: white;
+                        padding: 1vh;
+                        border: 0;
+                    }
+                }
                 .albums{
                     display: flex;
                     flex-direction: column;

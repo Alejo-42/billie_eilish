@@ -5,10 +5,10 @@ const significado1 = document.querySelector('#meaning1');
 function mostrarOcultarDescripcion1() {
     if (significado1.style.display === 'none') {
         significado1.style.display = 'block';
-        botonMostrar1.textContent = 'Ocultar';
+        botonMostrar1.textContent = 'Hide';
     } else {
         significado1.style.display = 'none';
-        botonMostrar1.textContent = 'Significado';
+        botonMostrar1.textContent = 'Meaning';
     }
 }
 
@@ -21,10 +21,10 @@ const significado2 = document.querySelector('#meaning2');
 function mostrarOcultarDescripcion2() {
     if (significado2.style.display === 'none') {
         significado2.style.display = 'block';
-        botonMostrar2.textContent = 'Ocultar';
+        botonMostrar2.textContent = 'Hide';
     } else {
         significado2.style.display = 'none';
-        botonMostrar2.textContent = 'Significado';
+        botonMostrar2.textContent = 'Meaning';
     }
 }
 
@@ -37,10 +37,10 @@ const significado3 = document.querySelector('#meaning3');
 function mostrarOcultarDescripcion3() {
     if (significado3.style.display === 'none') {
         significado3.style.display = 'block';
-        botonMostrar3.textContent = 'Ocultar';
+        botonMostrar3.textContent = 'Hide';
     } else {
         significado3.style.display = 'none';
-        botonMostrar3.textContent = 'Significado';
+        botonMostrar3.textContent = 'Meaning';
     }
 }
 
@@ -54,10 +54,10 @@ const significado4 = document.querySelector('#meaning4');
 function mostrarOcultarDescripcion4() {
     if (significado4.style.display === 'none') {
         significado4.style.display = 'block';
-        botonMostrar4.textContent = 'Ocultar';
+        botonMostrar4.textContent = 'Hide';
     } else {
         significado4.style.display = 'none';
-        botonMostrar4.textContent = 'Significado';
+        botonMostrar4.textContent = 'Meaning';
     }
 }
 
@@ -71,10 +71,10 @@ const significado5 = document.querySelector('#meaning5');
 function mostrarOcultarDescripcion5() {
     if (significado5.style.display === 'none') {
         significado5.style.display = 'block';
-        botonMostrar5.textContent = 'Ocultar';
+        botonMostrar5.textContent = 'Hide';
     } else {
         significado5.style.display = 'none';
-        botonMostrar5.textContent = 'Significado';
+        botonMostrar5.textContent = 'Meaning';
     }
 }
 
@@ -88,10 +88,10 @@ const significado6 = document.querySelector('#meaning6');
 function mostrarOcultarDescripcion6() {
     if (significado6.style.display === 'none') {
         significado6.style.display = 'block';
-        botonMostrar6.textContent = 'Ocultar';
+        botonMostrar6.textContent = 'Hide';
     } else {
         significado6.style.display = 'none';
-        botonMostrar6.textContent = 'Significado';
+        botonMostrar6.textContent = 'Meaning';
     }
 }
 
@@ -108,7 +108,7 @@ function mostrarOcultarDescripcion7() {
         botonMostrar7.textContent = 'Ocultar';
     } else {
         significado7.style.display = 'none';
-        botonMostrar7.textContent = 'Significado';
+        botonMostrar7.textContent = 'Meaning';
     }
 }
 
@@ -123,10 +123,10 @@ const significado8 = document.querySelector('#meaning8');
 function mostrarOcultarDescripcion8() {
     if (significado8.style.display === 'none') {
         significado8.style.display = 'block';
-        botonMostrar8.textContent = 'Ocultar';
+        botonMostrar8.textContent = 'Hide';
     } else {
         significado8.style.display = 'none';
-        botonMostrar8.textContent = 'Significado';
+        botonMostrar8.textContent = 'Meaning';
     }
 }
 
@@ -140,10 +140,10 @@ const significado9 = document.querySelector('#meaning9');
 function mostrarOcultarDescripcion9() {
     if (significado9.style.display === 'none') {
         significado9.style.display = 'block';
-        botonMostrar9.textContent = 'Ocultar';
+        botonMostrar9.textContent = 'Hide';
     } else {
         significado9.style.display = 'none';
-        botonMostrar9.textContent = 'Significado';
+        botonMostrar9.textContent = 'Meaning';
     }
 }
 
@@ -157,10 +157,10 @@ const significado10 = document.querySelector('#meaning10');
 function mostrarOcultarDescripcion10() {
     if (significado10.style.display === 'none') {
         significado10.style.display = 'block';
-        botonMostrar10.textContent = 'Ocultar';
+        botonMostrar10.textContent = 'Hide';
     } else {
         significado10.style.display = 'none';
-        botonMostrar10.textContent = 'Significado';
+        botonMostrar10.textContent = 'Meaning';
     }
 }
 
@@ -174,10 +174,10 @@ const significado11 = document.querySelector('#meaning11');
 function mostrarOcultarDescripcion11() {
     if (significado11.style.display === 'none') {
         significado11.style.display = 'block';
-        botonMostrar11.textContent = 'Ocultar';
+        botonMostrar11.textContent = 'Hide';
     } else {
         significado11.style.display = 'none';
-        botonMostrar11.textContent = 'Significado';
+        botonMostrar11.textContent = 'Meaning';
     }
 }
 
@@ -191,10 +191,10 @@ const significado12 = document.querySelector('#meaning12');
 function mostrarOcultarDescripcion12() {
     if (significado12.style.display === 'none') {
         significado12.style.display = 'block';
-        botonMostrar12.textContent = 'Ocultar';
+        botonMostrar12.textContent = 'Hide';
     } else {
         significado12.style.display = 'none';
-        botonMostrar12.textContent = 'Significado';
+        botonMostrar12.textContent = 'Meaning';
     }
 }
 
@@ -208,10 +208,10 @@ const significado13 = document.querySelector('#meaning13');
 function mostrarOcultarDescripcion13() {
     if (significado13.style.display === 'none') {
         significado13.style.display = 'block';
-        botonMostrar13.textContent = 'Ocultar';
+        botonMostrar13.textContent = 'Hide';
     } else {
         significado13.style.display = 'none';
-        botonMostrar13.textContent = 'Significado';
+        botonMostrar13.textContent = 'Meaning';
     }
 }
 
@@ -225,10 +225,10 @@ const significado14 = document.querySelector('#meaning14');
 function mostrarOcultarDescripcion14() {
     if (significado14.style.display === 'none') {
         significado14.style.display = 'block';
-        botonMostrar14.textContent = 'Ocultar';
+        botonMostrar14.textContent = 'Hide';
     } else {
         significado14.style.display = 'none';
-        botonMostrar14.textContent = 'Significado';
+        botonMostrar14.textContent = 'Meaning';
     }
 }
 
@@ -243,10 +243,10 @@ const significado15 = document.querySelector('#meaning15');
 function mostrarOcultarDescripcion15() {
     if (significado15.style.display === 'none') {
         significado15.style.display = 'block';
-        botonMostrar15.textContent = 'Ocultar';
+        botonMostrar15.textContent = 'Hide';
     } else {
         significado15.style.display = 'none';
-        botonMostrar15.textContent = 'Significado';
+        botonMostrar15.textContent = 'Meaning';
     }
 }
 
@@ -261,10 +261,10 @@ const significado16 = document.querySelector('#meaning16');
 function mostrarOcultarDescripcion16() {
     if (significado16.style.display === 'none') {
         significado16.style.display = 'block';
-        botonMostrar16.textContent = 'Ocultar';
+        botonMostrar16.textContent = 'Hide';
     } else {
         significado16.style.display = 'none';
-        botonMostrar16.textContent = 'Significado';
+        botonMostrar16.textContent = 'Meaning';
     }
 }
 

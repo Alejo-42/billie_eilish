@@ -20,7 +20,7 @@ header{
         h1{
             -webkit-text-stroke: 0.2vw black;
             text-shadow: 5px 5px 10px black;
-            color: orangered;
+            color: rgb(99, 99, 99);
             text-align: center;
             display: flex;
             align-items: center;
@@ -41,7 +41,7 @@ main{
                 margin: 1vh;
                 padding: 1vh;
                 width: 30%;
-                background-color: rgba(172, 255, 47, 0.3);
+                background-color: rgba(0, 0, 0, 0.3);
                 .n-a{
                     display: flex;
                     justify-content: space-evenly;
@@ -118,6 +118,42 @@ main{
                         }
                     }
                 }
+            }
+            .guess{
+                background-color: rgba(128, 128, 128, 0.4);
+            }
+            .wwimf{
+                background-color: rgba(172, 255, 47, 0.4);
+            }
+            .the30, .tv{
+                background-color: rgba(255, 192, 203, 0.4);
+            }
+            .hotline{
+                background-color: rgba(210, 105, 30, 0.4);
+            }
+            .lvao{
+                background-color: rgba(128, 0, 128, 0.4);
+            }
+            .nttd{
+                background-color: rgba(105, 105, 105, 0.4);
+            }
+            .eiw{
+                background-color: rgba(255, 127, 80, 0.4);
+            }
+            .bbh{
+                background-color: rgba(220, 20, 60, 0.4);
+            }
+            .coap{
+                background-color:rgba(139, 0, 139, 0.4);
+            }
+            .lovely{
+                background-color: rgba(245, 222, 179, 0.4);
+            }
+            .bored{
+                background-color: rgba(119, 136, 153, 0.4);
+            }
+            .sfu{
+                background-color:rgba(165, 42, 42, 0.4)
             }
         }
     }
