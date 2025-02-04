@@ -11,7 +11,6 @@ function cerrar() {
     $abrir.classList.remove("ocultar")
 }
 
-
 $abrir.addEventListener("click",abrir)
 $cerrar.addEventListener("click",cerrar)
 
