@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'General';
+    background: blue url(/assets/general/img/wallpaper.jpeg) no-repeat top;
+    background-size: cover;
+}
+@font-face {
+    font-family: 'General';
+    src: url(/assets/general/font/GENERAL-font.ttf);
+}
+header{
+    height: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    nav{
+        display: flex;
+        ul.menu-toggle{
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li{
+                a{
+                    display: block;
+                    text-decoration: none;
+                    color: white;
+                    padding: 2vh 3vh;
+                    transition: all 0.3s ease-in-out;
+                }
+                a:hover{
+                    background-color: gray;
+                }
+            }
+        }
+        button.btn-toggle{
+            display: none;
+        }
+    }
+}
+main{
+    background-color: rgba(255, 255, 255, 0.779);
+    .intro{
+        p{
+            padding: 2vh;
+            margin: 0;
+        }
+    }
+    .info{
+        h2{
+            padding: 3vh;
+            text-align: center;
+            font-size: 3em;
+            margin: 0;
+        }
+        p{
+            padding: 1vh;
+            margin: 0;
+        }
+    }
+    .albums{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            margin: 2vh;
+            text-align: center;
+            font-size: 3em;
+        }
+        ul{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            flex-wrap: wrap;
+            li{
+                margin: 2vh;
+                a{
+                    display: block;
+                    width: 100%;
+                    justify-content: center;
+                    transition: 0.5s ease-in-out;
+                    transform: scale(1);
+                    img{
+                        width: 30vh;
+                    }
+                }
+                a:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+footer{
+    padding: 1%;
+    background-color: black;
+    color: white;
+    .info-footer{
+        h3{
+            text-align: center;
+            font-size: 2em;
+            margin: 0;
+            padding: 1vh;
+        }
+        ul{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            justify-content:center;
+            li{
+                padding: 1vh 5vh;
+                list-style-type: none;
+                a{
+                    i{
+                        color: white;
+                        transform: scale(2);
+                        transition: 0.4s ease-in-out;
+                    }
+                    i#fb:hover{
+                        color:blue;
+
+                    }
+                    i#ig:hover{
+                        color:deeppink;
+
+                    }
+                    i#tt:hover{
+                        color:darkslategray;
+
+                    }
+                }
+            }
+        }
+    }
+    .derechos{
+        text-align: center;
+    }
+}
+@media (max-width:500px) {
+    header{
+        nav{
+            flex-direction: column;
+            width: 100%;
+            ul.menu-toggle{
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                position: sticky;
+                top: 9%;
+                left: 0;
+                background-color: #333;
+                z-index: 10;
+                li{
+                    width: 100%;
+                    text-align: center;
+                    a{
+                        width: 100;
+                    }
+                }
+            }
+            ul#menu-list.open{
+                display: flex
+            }
+            button.btn-toggle{
+                width: 100%;
+                display: block;
+                color: white;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                font-size: 2.5em;
+            }
+        }
+    }
+    main{
+        .albums{
+            ul{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }   
+}

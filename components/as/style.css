@@ -1,0 +1,420 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'General';
+    background: gray url(/assets/as/img/as-poster-pc.jpeg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+@font-face {
+    font-family: 'General';
+    src: url(/assets/general/font/GENERAL-font.ttf);
+}
+header{
+    h1{
+        text-align: center;
+        font-size: 5em;
+        margin: 5vh;
+        padding: 0;
+        color: rgb(0, 144, 60);
+        text-shadow: 10px 10px 5px black;
+    }
+}
+main{
+    .songs-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 2vh;
+        padding: 1vh;
+        .song-container{
+            display: flex;
+            .track-item{
+                width: 100%;
+                border-radius: 15px;
+                background-color: transparent;
+                list-style-type: none;
+                margin: 2vh;
+                .info-container{
+                    padding: 3vh;
+                    text-align: center;
+                    h3{
+                        color: white;
+                        font-size: 1.8em;
+                        text-shadow: 5px 5px 5px black;
+                        margin: 3vh;
+                        overflow-wrap: break-word;
+                    }
+                    .info-img{
+                        margin: 3vh;
+                        img{
+                            width: 60%;
+                        }
+                    }
+                }
+                .button-container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 2vh;
+                    margin: 0;
+                    .playback-control {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                        margin: 0;
+                        padding: 2vh 0;
+                        width: auto;
+                        i{
+                            color: white;
+                            transform: scale(2);
+                            text-shadow: 3px 3px 5px black;
+                        }
+                    }
+                    .progress-container{
+                        display: flex;
+                        align-items: center;
+                        span{
+                            color: white;
+                            text-shadow: 3px 3px 5px black;
+                            padding: 1vh;
+                        }
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: gray;
+                        }
+                        input[type='range']::-webkit-slider-runnable-track{
+                            background: linear-gradient(to right, #007bff 0%, #007bff var(--progress-percent), #2c2c2c var(--progress-percent), #555 100%);
+                        } 
+                    }
+                }
+                .meaning-button{
+                    background-color: transparent;
+                    border: none;   
+                    color: white; 
+                    text-shadow: 3px 3px 5px black;
+                    width: 100%;   
+                    padding: 2vh; 
+                    margin: 0;
+                }
+            }
+            .track-item.guess{
+                background-color: rgba(128, 128, 128, 0.848);
+                .button-container{
+                    .progress-container{
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: rgb(46, 46, 46);
+                        }
+                    }
+                }
+            }
+            .track-item.ladmv-extended{
+                background-color: rgba(250, 128, 114, 0.794);
+                .button-container{
+                    .progress-container{
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: rgb(141, 47, 36);
+                        }
+                    }
+                }
+            }
+            .track-item.wwimf{
+                background-color: rgba(172, 255, 47, 0.716);
+                .button-container{
+                    .progress-container{
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: rgb(51, 78, 10);
+                        }
+                    }
+                }
+            }
+            .track-item.the30, .track-item.tv{
+                background-color: rgba(184, 77, 112, 0.761);
+                .button-container{
+                    .progress-container{
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: rgb(117, 24, 55);
+                        }
+                    }
+                }
+            }
+            .track-item.lvao{
+                background-color: rgba(128, 0, 128, 0.724);
+                .button-container{
+                    .progress-container{
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: rgb(50, 5, 50);
+                        }
+                    }
+                }
+            }
+            .track-item.nttd{
+                background-color: rgba(128, 128, 128, 0.77);
+                .button-container{
+                    .progress-container{
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: rgb(46, 46, 46);
+                        }
+                    }
+                }
+            }
+            .track-item.eiw{
+                background-color: rgba(61, 83, 99, 0.757);
+                .button-container{
+                    .progress-container{
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: rgba(4, 6, 14, 0.757);
+                        }
+                    }
+                }
+            }
+            .track-item.wiwo{
+                background-color: rgba(247, 255, 193, 0.778);
+                .button-container{
+                    .progress-container{
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: rgba(90, 94, 61, 0.778);
+                        }
+                    }
+                }
+                .info-container{
+                    h3{
+                        color: black;
+                        text-shadow: 3px 3px 5px gray;
+                    }
+                }
+                .button-container{
+                    .playback-control{
+                        i{
+                            color: black;
+                        }
+                        i:hover{
+                            color: gray;
+                        }
+                    }
+                    .progress-container{
+                        span{
+                            color: black;
+                            text-shadow: 3px 3px 5px gray;
+                            
+                        }
+                    }
+                }
+                .meaning-button{
+                    color: black;
+                    text-shadow: 3px 3px 5px gray;
+                }
+                
+            }
+            .track-item.coap{
+                background-color:rgba(137, 43, 226, 0.757);
+                .button-container{
+                    .progress-container{
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: rgb(45, 13, 74);
+                        }
+                    }
+                }
+            }
+            .track-item.lovely{
+                background-color: rgba(255, 255, 255, 0.778);
+                .button-container{
+                    .progress-container{
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: rgb(46, 46, 46);
+                        }
+                    }
+                }
+                .info-container{
+                    h3{
+                        color: black;
+                        text-shadow: 3px 3px 5px gray;
+                    }
+                }
+                .button-container{
+                    .playback-control{
+                        i{
+                            color: black;
+                        }
+                        i:hover{
+                            color: gray;
+                        }
+                    }
+                    .progress-container{
+                        span{
+                        color: black;
+                        text-shadow: 3px 3px 5px gray;
+                        
+                    }
+                }
+            }
+            .meaning-button{
+                color: black;
+                text-shadow: 3px 3px 5px gray;
+                }
+            }
+            .track-item.bbh{
+                background-color: rgba(165, 42, 42, 0.76);
+                .button-container{
+                    .progress-container{
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: rgb(62, 12, 12);
+                        }
+                    }
+                }
+            }
+            .track-item.bored{
+                background-color: rgba(220, 20, 20, 0.776);
+                .button-container{
+                    .progress-container{
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: rgb(99, 10, 10);
+                        }
+                    }
+                }
+            }
+            .track-item.sfu{
+                background-color: rgba(18, 54, 54, 0.813);
+                .button-container{
+                    .progress-container{
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: rgba(0, 0, 0, 0.813);
+                        }
+                    }
+                }
+            }
+            .track-item.hotline{
+                background-color: rgba(210, 105, 30, 0.727);
+                .button-container{
+                    .progress-container{
+                        input[type='range']{
+                            width: 100%;
+                            accent-color: rgb(85, 40, 7);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    padding: 1%;
+    background-color: black;
+    color: white;
+    p.derechos{
+        text-align: center;
+        margin: 0;
+    }
+}
+
+/* 1. Por defecto, oculta el icono de Pause */
+.playback-control .pause-icon {
+    display: none;
+}
+/* 2. Cuando está activo, oculta el Play y muestra el Pause */
+.playback-control.active-play .play-icon {
+    display: none;
+}
+
+.playback-control.active-play .pause-icon {
+    display: inline; /* Muestra el icono de Pause */
+}
+.hidden{
+    display: none !important;
+}
+/* 2. El fondo oscuro (overlay) que cubre toda la pantalla */
+.modal-overlay {
+    position: fixed; /* Fija la ventana sobre todo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente oscuro */
+    display: flex; /* Centra el contenido */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de todos los demás elementos */
+}
+
+/* 3. El contenedor de la ventana (el cuadro) */
+.modal-content-wrapper {
+    position: relative; /* Para posicionar el botón de cerrar */
+    background-color: transparent;
+    color: white;
+    padding: 3vh;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+/* 4. Botón de cerrar (x) */
+#modal-close-btn {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+@media (max-width:870px) {
+    body{
+        background: gray url(/assets/as/img/as-poster-cel.jpeg) no-repeat center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    main{
+        .songs-list{
+            .song-container{
+                flex-direction: column;
+                align-items: center;
+                .track-item{
+                    width: 70%;
+                    .info-container{
+                        .info-img{
+                            img{
+                                width: 60%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:550px) {
+    main{
+        .songs-list{
+            margin: 1%;
+            .song-container{
+                flex-direction: column;
+                align-items: center;
+                .track-item{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
